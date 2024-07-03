@@ -1,0 +1,3647 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+}
+
+
+.soclajjdf
+{
+    display:none !important;
+}
+
+
+
+.clock {
+    box-shadow: 0 15px 50px 7px rgba(0, 0, 0, 0.3);
+    background: #1c1c1c;
+    font-family: "Raleway Regular";
+    overflow: hidden;
+}
+@keyframes rotate {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+.clock .languages {
+    position: absolute;
+}
+.clock .big-background-letter {
+    top: -30vh;
+    right: 120vh;
+    color: rgba(68, 68, 68, 0.15);
+    font-size: 120vh;
+}
+.clock .text-block {
+    position: relative;
+    top: 25vh;
+    left: 23vh;
+    z-index: 1;
+    width: 30%;
+    font-family: "Raleway ExtraBold";
+}
+.clock .text-container {
+    color: #fff;
+    overflow: hidden;
+}
+.clock .text-container:last-of-type {
+    margin: 22px 0 0 5px;
+}
+.clock .text-block-header {
+    display: block;
+    font-size: 53px;
+}
+.clock .text-block-slogan {
+    display: inline-block;
+    color: #425cbb;
+    font-family: "Roboto Medium";
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+.clock .watch-light {
+    position: absolute;
+    top: 0;
+    left: -17px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/watch-light.html) no-repeat center;
+    background-size: cover;
+}
+.clock .watch-shadow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/watch-shadow.html) no-repeat center;
+}
+.clock .watch {
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background: url(../images/watch.html) no-repeat center;
+}
+.clock .hours-container,
+.clock .minutes-container,
+.clock .seconds-container {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: absolute;
+    top: 0;
+    left: -17px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+}
+.clock .hours {
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 46%;
+    margin: auto;
+    width: 20px;
+    height: 60px;
+    background: url(../images/hours-hand.html) no-repeat;
+    background-size: cover;
+    transform-origin: 60% 100%;
+}
+.clock .minutes {
+    display: block;
+    position: absolute;
+    top: -34.5%;
+    left: 48%;
+    margin: auto;
+    width: 12px;
+    height: 252px;
+    background: url(../images/minutes-hand.html) no-repeat;
+    background-size: cover;
+    transform-origin: 50% 100%;
+}
+.clock .seconds {
+    display: block;
+    position: absolute;
+    top: 41.5%;
+    left: 46.5%;
+    z-index: 8;
+    margin: auto;
+    width: 20px;
+    height: 145px;
+    background: url(../images/seconds-hand.html) no-repeat;
+    background-size: cover;
+    transform: rotateZ(0) !important;
+}
+.clock .hours-container {
+    animation: rotate 43200s infinite linear;
+}
+.clock .minutes-container {
+    transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+}
+.clock .seconds-container {
+    transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+}
+.clock.first-slide {
+    animation: fadeIn 0.9s 0s both;
+}
+.clock.current,
+.clock.current-back,
+.clock.previous,
+.clock.previous-back {
+    animation: fadeIn 0.9s 0s both;
+}
+.clock.current .languages a,
+.clock.current-back .languages a,
+.clock.previous .languages a,
+.clock.previous-back .languages a {
+    animation: Down 0.9s 0.9s both;
+}
+.clock.current .big-background-letter,
+.clock.current-back .big-background-letter,
+.clock.previous .big-background-letter,
+.clock.previous-back .big-background-letter {
+    animation: fadeIn 0.9s 0.9s both;
+}
+.clock.current .scroll,
+.clock.current-back .scroll,
+.clock.previous .scroll,
+.clock.previous-back .scroll {
+    animation: fadeIn 0.6s 2.1s both;
+}
+.clock.current .copyright p,
+.clock.current-back .copyright p,
+.clock.previous .copyright p,
+.clock.previous-back .copyright p {
+    animation: Up 0.6s 2.1s both;
+}
+.clock.current .social .instagram,
+.clock.current-back .social .instagram,
+.clock.previous .social .instagram,
+.clock.previous-back .social .instagram {
+    animation: social 0.9s 0.9s both;
+}
+.clock.current .social .facebook,
+.clock.current-back .social .facebook,
+.clock.previous .social .facebook,
+.clock.previous-back .social .facebook {
+    animation: socialReverse 0.9s 0.9s both;
+}
+.clock.current .social .jumping-button,
+.clock.current-back .social .jumping-button,
+.clock.previous .social .jumping-button,
+.clock.previous-back .social .jumping-button {
+    animation: fadeInRight 0.9s 0.9s both;
+}
+.clock.current .watch,
+.clock.current-back .watch,
+.clock.previous .watch,
+.clock.previous-back .watch {
+    animation: fadeIn 0.6s 1.2s both;
+}
+.clock.current .watch-shadow,
+.clock.current-back .watch-shadow,
+.clock.previous .watch-shadow,
+.clock.previous-back .watch-shadow {
+    animation: fadeIn 0.6s 1.5s both;
+}
+.clock.current .watch-light,
+.clock.current-back .watch-light,
+.clock.previous .watch-light,
+.clock.previous-back .watch-light {
+    animation: fadeIn 0.6s 1.8s both;
+}
+.clock.current .text-block-header,
+.clock.current-back .text-block-header,
+.clock.previous .text-block-header,
+.clock.previous-back .text-block-header {
+    animation: Up 0.6s 1.5s linear both;
+}
+.clock.current .text-block-slogan,
+.clock.current-back .text-block-slogan,
+.clock.previous .text-block-slogan,
+.clock.previous-back .text-block-slogan {
+    animation: Up 0.6s 1.8s linear both;
+}
+.clock.previous .languages a,
+.clock.previous-back .languages a {
+    animation-play-state: paused;
+}
+.clock.previous .big-background-letter,
+.clock.previous-back .big-background-letter {
+    animation-play-state: paused;
+}
+.clock.previous .scroll,
+.clock.previous-back .scroll {
+    animation-play-state: paused;
+}
+.clock.previous .social .instagram,
+.clock.previous-back .social .instagram {
+    animation-play-state: paused;
+}
+.clock.previous .social .facebook,
+.clock.previous-back .social .facebook {
+    animation-play-state: paused;
+}
+.clock.previous .social .jumping-button,
+.clock.previous-back .social .jumping-button {
+    animation-play-state: paused;
+}
+.clock.previous .watch,
+.clock.previous-back .watch {
+    animation-play-state: paused;
+}
+.clock.previous .watch-shadow,
+.clock.previous-back .watch-shadow {
+    animation-play-state: paused;
+}
+.clock.previous .watch-light,
+.clock.previous-back .watch-light {
+    animation-play-state: paused;
+}
+.clock.previous .text-block-header,
+.clock.previous-back .text-block-header {
+    animation-play-state: paused;
+}
+.clock.previous .text-block-slogan,
+.clock.previous-back .text-block-slogan {
+    animation-play-state: paused;
+}
+.clock.current-back {
+    animation: none;
+}
+.clock.previous-back {
+    animation-play-state: running;
+}
+.company-description {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    font-family: "Raleway Regular";
+    overflow: hidden;
+}
+.company-description .languages {
+    position: absolute;
+}
+.company-description .big-background-letter {
+    top: 28vh;
+    left: -100px;
+    right: initial;
+    color: rgba(68, 68, 68, 0.1);
+    font-size: 85vh;
+    text-transform: lowercase;
+}
+.company-description .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    width: 80%;
+    height: 100%;
+}
+.company-description .texts {
+    position: relative;
+    z-index: 4;
+    width: 45%;
+}
+.company-description .phrases-container {
+    margin-top: 20px;
+}
+.company-description .phrase {
+    display: inline-block;
+    color: #425cbb;
+    font-family: "Raleway Bold";
+    font-size: 85px;
+    line-height: 0.9;
+}
+.company-description .phrase-translation {
+    margin-top: 40px;
+    color: #999;
+    font-family: "Raleway Medium";
+    font-size: 50px;
+}
+.company-description .phrase-description {
+    margin-top: 60px;
+    font-family: "Roboto Regular";
+    font-size: 26px;
+    line-height: 1.2;
+}
+.company-description .crossed-button {
+    position: relative;
+    float: right;
+    margin: 100px 0 0 -10px;
+}
+.company-description .crossed-button span {
+    color: #425cbb;
+    font-size: 20px;
+}
+.company-description .crossed-button span:before {
+    background: #425cbb;
+}
+.company-description .crossed-button span:after {
+    content: "";
+}
+.company-description .crossed-button .arrow-container .st0,
+.company-description .crossed-button .arrow-container .st1 {
+    stroke: #425cbb;
+}
+.company-description .images {
+    width: 55%;
+    height: 100%;
+}
+.company-description .image-container {
+    position: relative;
+    overflow: hidden;
+    font-size: 0;
+}
+.company-description .image-container img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.company-description .image-container:first-of-type {
+    position: relative;
+    left: -10%;
+    width: 100%;
+    height: 100%;
+    max-height: 900px;
+    min-height: 700px;
+}
+.company-description .image-container:first-of-type:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    width: 20%;
+    height: 85%;
+    background: #fff;
+    content: "";
+}
+.company-description .image-container:last-of-type {
+    position: absolute;
+    right: 0;
+    bottom: 10vh;
+    z-index: 2;
+}
+.company-description .image-container:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #444;
+    content: "";
+}
+.company-description .rotated-text {
+    position: absolute;
+    top: 400px;
+    right: 90px;
+    z-index: 2;
+    width: 200px;
+    transform-origin: 100% 0;
+    transform: rotate(90deg);
+}
+.company-description .rotated-text p {
+    font-size: 12px;
+    line-height: 1.4;
+}
+.company-description.current,
+.company-description.current-back,
+.company-description.previous,
+.company-description.previous-back {
+    animation: Up 0.9s 0s both;
+}
+.company-description.current .languages a,
+.company-description.current-back .languages a,
+.company-description.previous .languages a,
+.company-description.previous-back .languages a {
+    animation: Down 0.9s 0.9s both;
+}
+.company-description.current .big-background-letter,
+.company-description.current-back .big-background-letter,
+.company-description.previous .big-background-letter,
+.company-description.previous-back .big-background-letter {
+    animation: fadeIn 0.6s 3.3s both;
+}
+.company-description.current .sticker-text,
+.company-description.current-back .sticker-text,
+.company-description.previous .sticker-text,
+.company-description.previous-back .sticker-text {
+    animation: fadeInRight 0.6s 1.5s both;
+}
+.company-description.current .sticker:before,
+.company-description.current-back .sticker:before,
+.company-description.previous .sticker:before,
+.company-description.previous-back .sticker:before {
+    animation: widthIncreaseStickerLine 0.6s 0.9s both;
+}
+.company-description.current .phrase,
+.company-description.current-back .phrase,
+.company-description.previous .phrase,
+.company-description.previous-back .phrase {
+    animation: fadeInUp 0.6s 0.9s both;
+}
+.company-description.current .phrase-translation,
+.company-description.current-back .phrase-translation,
+.company-description.previous .phrase-translation,
+.company-description.previous-back .phrase-translation {
+    animation: fadeInUp 0.6s 1.5s both;
+}
+.company-description.current .phrase-description,
+.company-description.current-back .phrase-description,
+.company-description.previous .phrase-description,
+.company-description.previous-back .phrase-description {
+    animation: fadeInUp 0.6s 2.1s both;
+}
+.company-description.current .crossed-button,
+.company-description.current-back .crossed-button,
+.company-description.previous .crossed-button,
+.company-description.previous-back .crossed-button {
+    animation: fadeInRight 0.6s 2.7s both;
+}
+.company-description.current .image-container img,
+.company-description.current-back .image-container img,
+.company-description.previous .image-container img,
+.company-description.previous-back .image-container img {
+    animation: imageApear 0.6s linear both;
+}
+.company-description.current .image-container:before,
+.company-description.current-back .image-container:before,
+.company-description.previous .image-container:before,
+.company-description.previous-back .image-container:before {
+    animation: beforeApear 1.2s linear both;
+}
+.company-description.current .image-container:first-of-type img,
+.company-description.current-back .image-container:first-of-type img,
+.company-description.previous .image-container:first-of-type img,
+.company-description.previous-back .image-container:first-of-type img {
+    animation-delay: 0.9s;
+}
+.company-description.current .image-container:first-of-type:before,
+.company-description.current-back .image-container:first-of-type:before,
+.company-description.previous .image-container:first-of-type:before,
+.company-description.previous-back .image-container:first-of-type:before {
+    animation-delay: 0.9s;
+}
+.company-description.current .image-container:last-of-type img,
+.company-description.current-back .image-container:last-of-type img,
+.company-description.previous .image-container:last-of-type img,
+.company-description.previous-back .image-container:last-of-type img {
+    animation-delay: 2.1s;
+}
+.company-description.current .image-container:last-of-type:before,
+.company-description.current-back .image-container:last-of-type:before,
+.company-description.previous .image-container:last-of-type:before,
+.company-description.previous-back .image-container:last-of-type:before {
+    animation-delay: 2.1s;
+}
+.company-description.current .rotated-text p,
+.company-description.current-back .rotated-text p,
+.company-description.previous .rotated-text p,
+.company-description.previous-back .rotated-text p {
+    animation: fadeInUp 0.6s 2.7s both;
+}
+.company-description.previous,
+.company-description.previous-back {
+    animation: slideDown 0.9s 0.6s both;
+    animation-play-state: paused;
+}
+.company-description.previous .languages a,
+.company-description.previous-back .languages a {
+    animation-play-state: paused;
+}
+.company-description.previous .big-background-letter,
+.company-description.previous-back .big-background-letter {
+    animation-play-state: paused;
+}
+.company-description.previous .sticker-text,
+.company-description.previous-back .sticker-text {
+    animation-play-state: paused;
+}
+.company-description.previous .sticker:before,
+.company-description.previous-back .sticker:before {
+    animation-play-state: paused;
+}
+.company-description.previous .phrase,
+.company-description.previous-back .phrase {
+    animation-play-state: paused;
+}
+.company-description.previous .phrase-translation,
+.company-description.previous-back .phrase-translation {
+    animation-play-state: paused;
+}
+.company-description.previous .phrase-description,
+.company-description.previous-back .phrase-description {
+    animation-play-state: paused;
+}
+.company-description.previous .crossed-button,
+.company-description.previous-back .crossed-button {
+    animation-play-state: paused;
+}
+.company-description.previous .image-container img,
+.company-description.previous-back .image-container img {
+    animation-play-state: paused;
+}
+.company-description.previous .image-container:before,
+.company-description.previous-back .image-container:before {
+    animation-play-state: paused;
+}
+.company-description.previous .rotated-text p,
+.company-description.previous-back .rotated-text p {
+    animation-play-state: paused;
+}
+.company-description.current-back {
+    animation: none;
+}
+.company-description.previous-back {
+    animation-play-state: running;
+}
+.audi {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    font-size: 0;
+}
+.audi .languages {
+    position: absolute;
+}
+.audi .audi-block-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 960px;
+    object-fit: cover;
+}
+.audi .mirror {
+    position: relative;
+    margin-left: 25vw;
+    z-index: 2;
+    width: 25%;
+    height: 100%;
+    box-shadow: 0 0 30px 0 #000;
+    overflow: hidden;
+}
+.audi .mirror > img {
+    left: -25vw;
+    width: 100vw;
+}
+.audi .portfolio-right-panel .date {
+    margin-bottom: 150px;
+}
+.audi .info {
+    position: relative;
+    z-index: 1;
+    margin: 90px 10% 0 auto;
+    width: 30%;
+}
+.audi .project-name {
+    display: block;
+    position: relative;
+    left: -240px;
+    z-index: 1;
+    font-family: "Audi Bold";
+    font-size: 250px;
+}
+.audi .about-work {
+    margin-top: 40px;
+    margin-left: auto;
+    width: 80%;
+}
+.audi .about-work p {
+    color: #fff;
+    font-family: "Roboto Light";
+    font-size: 30px;
+    line-height: 1.4;
+}
+.audi .special-button {
+    display: block;
+    margin: 30px 0 0 20%;
+    height: 55px;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    color: #fff;
+    font-family: "Roboto Light";
+    font-size: 14px;
+    line-height: 55px;
+    float: left;
+}
+.audi .bottom-button .line {
+    background: #444;
+}
+.audi .bottom-button span {
+    color: #444;
+}
+.audi .bottom-button .arrow .st0,
+.audi .bottom-button .arrow .st1 {
+    fill: #444;
+    stroke: #444;
+}
+.audi.current,
+.audi.current-back,
+.audi.previous,
+.audi.previous-back {
+    animation: Up 0.9s 0s both;
+}
+.audi.current .languages a,
+.audi.current-back .languages a,
+.audi.previous .languages a,
+.audi.previous-back .languages a {
+    animation: Down 0.9s 0.9s both;
+}
+.audi.current .portfolio-client .client,
+.audi.current-back .portfolio-client .client,
+.audi.previous .portfolio-client .client,
+.audi.previous-back .portfolio-client .client {
+    animation: fadeInRight 0.3s 0.9s both;
+}
+.audi.current .portfolio-client .client-name-container span,
+.audi.current-back .portfolio-client .client-name-container span,
+.audi.previous .portfolio-client .client-name-container span,
+.audi.previous-back .portfolio-client .client-name-container span {
+    animation: Right 0.3s 1.2s both;
+}
+.audi.current .portfolio-right-panel .date,
+.audi.current-back .portfolio-right-panel .date,
+.audi.previous .portfolio-right-panel .date,
+.audi.previous-back .portfolio-right-panel .date {
+    animation: fadeInLeft 0.3s 0.9s both;
+}
+.audi.current .portfolio-right-panel .devices span,
+.audi.current-back .portfolio-right-panel .devices span,
+.audi.previous .portfolio-right-panel .devices span,
+.audi.previous-back .portfolio-right-panel .devices span {
+    animation-name: fadeInLeft;
+    animation-fill-mode: both;
+}
+.audi.current .portfolio-right-panel .devices span:nth-child(1),
+.audi.current-back .portfolio-right-panel .devices span:nth-child(1),
+.audi.previous .portfolio-right-panel .devices span:nth-child(1),
+.audi.previous-back .portfolio-right-panel .devices span:nth-child(1) {
+    animation-duration: 0.3s;
+    animation-delay: 1.2s;
+}
+.audi.current .portfolio-right-panel .devices span:nth-child(2),
+.audi.current-back .portfolio-right-panel .devices span:nth-child(2),
+.audi.previous .portfolio-right-panel .devices span:nth-child(2),
+.audi.previous-back .portfolio-right-panel .devices span:nth-child(2) {
+    animation-duration: 0.3s;
+    animation-delay: 1.5s;
+}
+.audi.current .portfolio-right-panel .devices span:nth-child(3),
+.audi.current-back .portfolio-right-panel .devices span:nth-child(3),
+.audi.previous .portfolio-right-panel .devices span:nth-child(3),
+.audi.previous-back .portfolio-right-panel .devices span:nth-child(3) {
+    animation-duration: 0.3s;
+    animation-delay: 1.8s;
+}
+.audi.current .bottom-button span,
+.audi.current-back .bottom-button span,
+.audi.previous .bottom-button span,
+.audi.previous-back .bottom-button span {
+    animation: fadeInRight 0.9s 2.1s both;
+}
+.audi.current .bottom-button .line,
+.audi.current-back .bottom-button .line,
+.audi.previous .bottom-button .line,
+.audi.previous-back .bottom-button .line {
+    animation: Right 0.9s 1.2s both;
+}
+.audi.current .sticker-text,
+.audi.current-back .sticker-text,
+.audi.previous .sticker-text,
+.audi.previous-back .sticker-text {
+    animation: FadeInRightHalf 0.9s 2.4s both;
+}
+.audi.current .sticker:before,
+.audi.current-back .sticker:before,
+.audi.previous .sticker:before,
+.audi.previous-back .sticker:before {
+    animation: widthIncreaseStickerLine 0.9s 1.5s both;
+}
+.audi.current .project-name-container,
+.audi.current-back .project-name-container,
+.audi.previous .project-name-container,
+.audi.previous-back .project-name-container {
+    animation: fadeInRight 0.9s 2.4s both;
+}
+.audi.current .about-work p,
+.audi.current-back .about-work p,
+.audi.previous .about-work p,
+.audi.previous-back .about-work p {
+    animation: fadeInUpHalf 0.9s 1.5s both;
+}
+.audi.current .special-button,
+.audi.current-back .special-button,
+.audi.previous .special-button,
+.audi.previous-back .special-button {
+    animation: fadeInUp 0.9s 2.4s both;
+}
+.audi.previous,
+.audi.previous-back {
+    animation: slideDown 0.9s 0.6s both;
+    animation-play-state: paused;
+}
+.audi.previous .languages a,
+.audi.previous-back .languages a {
+    animation-play-state: paused;
+}
+.audi.previous .portfolio-client .client,
+.audi.previous-back .portfolio-client .client {
+    animation-play-state: paused;
+}
+.audi.previous .portfolio-client .client-name-container span,
+.audi.previous-back .portfolio-client .client-name-container span {
+    animation-play-state: paused;
+}
+.audi.previous .portfolio-right-panel .date,
+.audi.previous-back .portfolio-right-panel .date {
+    animation-play-state: paused;
+}
+.audi.previous .portfolio-right-panel .devices span,
+.audi.previous-back .portfolio-right-panel .devices span {
+    animation-play-state: paused;
+}
+.audi.previous .bottom-button span,
+.audi.previous-back .bottom-button span {
+    animation-play-state: paused;
+}
+.audi.previous .bottom-button .line,
+.audi.previous-back .bottom-button .line {
+    animation-play-state: paused;
+}
+.audi.previous .sticker-text,
+.audi.previous-back .sticker-text {
+    animation-play-state: paused;
+}
+.audi.previous .sticker:before,
+.audi.previous-back .sticker:before {
+    animation-play-state: paused;
+}
+.audi.previous .project-name-container,
+.audi.previous-back .project-name-container {
+    animation-play-state: paused;
+}
+.audi.previous .about-work p,
+.audi.previous-back .about-work p {
+    animation-play-state: paused;
+}
+.audi.previous .special-button,
+.audi.previous-back .special-button {
+    animation-play-state: paused;
+}
+.audi.current-back {
+    animation: none;
+}
+.audi.previous-back {
+    animation-play-state: running;
+}
+.our-best-works {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: #1c1c1c;
+    overflow: hidden;
+    box-shadow: 0 15px 50px 7px rgba(0, 0, 0, 0.3);
+}
+.our-best-works .back-layer,
+.our-best-works .front-layer {
+    width: 100vw;
+    height: 100vh;
+    min-height: 900px;
+}
+.our-best-works .front-layer {
+    position: relative;
+    z-index: 2;
+    background: #1c1c1c;
+    overflow: hidden;
+    transform-origin: 0 50%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+.our-best-works .front-layer:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    content: "";
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.our-best-works .back-layer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-right: 70px;
+    width: 100%;
+    background: #000;
+}
+.our-best-works .languages {
+    position: absolute;
+}
+.our-best-works .big-background-letter {
+    right: 50px;
+    top: -100%;
+}
+.our-best-works .big-background-letter span {
+    font-size: 1600px;
+}
+.our-best-works .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    width: 68%;
+    height: 100%;
+}
+.our-best-works .lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.our-best-works .lines .line {
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #999;
+    opacity: 0.2;
+}
+.our-best-works .lines .line--1 {
+    left: 0;
+}
+.our-best-works .lines .line--2 {
+    left: 24%;
+}
+.our-best-works .lines .line--3 {
+    right: calc(60% - 60px);
+}
+.our-best-works .lines .line--4 {
+    right: 30%;
+}
+.our-best-works .lines .line--5 {
+    right: 60px;
+}
+.our-best-works .info {
+    width: 24%;
+}
+.our-best-works .new-title {
+    margin-top: 25px;
+}
+.our-best-works .text-container:before {
+    display: none;
+}
+.our-best-works .new-title-text {
+    color: #fff;
+    font-family: "Raleway ExtraBold";
+    font-size: 72px;
+    line-height: 1.2;
+    text-transform: initial;
+    white-space: initial;
+}
+.our-best-works .special-button {
+    display: block;
+    margin-top: 70px;
+    width: 100%;
+    color: #fff;
+}
+.our-best-works .portfolio {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    width: 60%;
+    height: 100%;
+}
+.our-best-works .portfolio__item {
+    position: relative;
+    width: 50%;
+    height: 350px;
+}
+.our-best-works .portfolio__item:hover .project-name {
+    opacity: 0;
+    transition-delay: 0s;
+}
+.our-best-works .portfolio__item:hover .back:before {
+    transform: none;
+    transition-delay: 0s;
+}
+.our-best-works .portfolio__item:hover .go-to-project,
+.our-best-works .portfolio__item:hover .project-description,
+.our-best-works .portfolio__item:hover .project-logo {
+    opacity: 1;
+    transform: none;
+    transition-delay: 0.3s;
+}
+.our-best-works .portfolio__item--audi {
+    left: -60px;
+    top: -60px;
+}
+.our-best-works .portfolio__item--audi .project-name {
+    top: 0;
+    left: -40px;
+}
+.our-best-works .portfolio__item--dela .project-name {
+    top: 0;
+    right: -130px;
+}
+.our-best-works .portfolio__item--euro-club .project-name {
+    bottom: 0;
+    left: -165px;
+}
+.our-best-works .portfolio__item--your-project {
+    left: 60px;
+    top: 60px;
+    cursor: pointer;
+}
+.our-best-works .portfolio__item--your-project .project-description {
+    font-size: 16px;
+    line-height: 1.4;
+}
+.our-best-works .portfolio__item--your-project .project-name {
+    bottom: 0;
+    right: -220px;
+}
+.our-best-works .portfolio__item--your-project:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #666;
+    content: "";
+}
+.our-best-works .back,
+.our-best-works .front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.our-best-works .back {
+    padding: 30px;
+    overflow: hidden;
+}
+.our-best-works .back:before {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    z-index: 2;
+    width: 101%;
+    height: 101%;
+    background: rgba(0, 0, 0, 0.9);
+    content: "";
+    transform: translateY(101%);
+    transition: transform 0.3s 0.6s;
+}
+.our-best-works .project-name {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    padding: 15px 40px;
+    background: #1c1c1c;
+    color: #fff;
+    font-family: "Raleway Medium";
+    font-size: 40px;
+    transition: opacity 0.2s 0.6s;
+}
+.our-best-works .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.our-best-works .image-container img {
+    display: block;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.our-best-works .image-container:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #999;
+    content: "";
+}
+.our-best-works .go-to-project,
+.our-best-works .project-description,
+.our-best-works .project-logo {
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.6s 0s, transform 0.6s 0s;
+}
+.our-best-works .project-logo {
+    width: 100px;
+    height: 50px;
+}
+.our-best-works .project-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.our-best-works .project-description {
+    margin-top: 20px;
+    color: #d7d7d7;
+    font-family: "Roboto Regular";
+    font-size: 14px;
+    line-height: 1.4;
+    transform: translateY(20%);
+}
+.our-best-works .go-to-project {
+    display: block;
+    margin-top: 20px;
+    color: #425cbb;
+    font-family: "Roboto Black";
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.our-best-works .plus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 15px;
+    transform: translate3d(-50%, -50%, 0);
+}
+.our-best-works .plus-row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #515151;
+}
+.our-best-works .plus-row--2 {
+    transform-origin: 50% 50%;
+    transform: rotate(90deg);
+}
+.our-best-works .form {
+    width: 20%;
+}
+.our-best-works.opened .front-layer {
+    transform: rotateY(15deg) scaleX(0.85);
+}
+.our-best-works.opened .front-layer:after {
+    z-index: 9999;
+    opacity: 1;
+}
+.our-best-works.current,
+.our-best-works.current-back,
+.our-best-works.previous,
+.our-best-works.previous-back {
+    animation: Down 0.9s 0s both;
+}
+.our-best-works.current .languages a,
+.our-best-works.current-back .languages a,
+.our-best-works.previous .languages a,
+.our-best-works.previous-back .languages a {
+    animation: Down 0.9s 0.9s both;
+}
+.our-best-works.current .big-background-letter,
+.our-best-works.current-back .big-background-letter,
+.our-best-works.previous .big-background-letter,
+.our-best-works.previous-back .big-background-letter {
+    animation: fadeIn 0.9s 0.9s both;
+}
+.our-best-works.current .lines,
+.our-best-works.current-back .lines,
+.our-best-works.previous .lines,
+.our-best-works.previous-back .lines {
+    animation: fadeIn 0.9s 0.9s both;
+}
+.our-best-works.current .info,
+.our-best-works.current-back .info,
+.our-best-works.previous .info,
+.our-best-works.previous-back .info {
+    animation: fadeIn 0.9s 1.8s both;
+}
+.our-best-works.current .portfolio__item,
+.our-best-works.current-back .portfolio__item,
+.our-best-works.previous .portfolio__item,
+.our-best-works.previous-back .portfolio__item {
+    animation: fadeIn 0.9s 2.4s both;
+}
+.our-best-works.current .bottom-button,
+.our-best-works.current-back .bottom-button,
+.our-best-works.previous .bottom-button,
+.our-best-works.previous-back .bottom-button {
+    animation: fadeIn 0.9s 0.9s both;
+}
+.our-best-works.previous,
+.our-best-works.previous-back {
+    animation: toUp 0.9s 0.6s both;
+    animation-play-state: paused;
+}
+.our-best-works.previous .languages a,
+.our-best-works.previous-back .languages a {
+    animation-play-state: paused;
+}
+.our-best-works.previous .big-background-letter,
+.our-best-works.previous-back .big-background-letter {
+    animation-play-state: paused;
+}
+.our-best-works.previous .lines,
+.our-best-works.previous-back .lines {
+    animation-play-state: paused;
+}
+.our-best-works.previous .info,
+.our-best-works.previous-back .info {
+    animation-play-state: paused;
+}
+.our-best-works.previous .portfolio__item,
+.our-best-works.previous-back .portfolio__item {
+    animation-play-state: paused;
+}
+.our-best-works.previous .bottom-button,
+.our-best-works.previous-back .bottom-button {
+    animation-play-state: paused;
+}
+.our-best-works.current-back {
+    animation: none;
+}
+.our-best-works.previous-back {
+    animation-play-state: running;
+}
+.our-clients {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 1;
+    background: #1c1c1c;
+    box-shadow: 0 15px 50px 7px rgba(0, 0, 0, 0.3);
+    font-family: "Raleway Regular";
+    overflow: hidden;
+}
+.our-clients .lines {
+    position: absolute;
+    top: 0;
+    left: calc((100% - $container-width) / 2);
+    height: 100%;
+    width: 62%;
+}
+.our-clients .line {
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #444;
+}
+.our-clients .line--1 {
+    left: -1px;
+}
+.our-clients .line--2 {
+    left: 25%;
+}
+.our-clients .line--3 {
+    left: 50%;
+}
+.our-clients .line--4 {
+    left: 75%;
+}
+.our-clients .line--5 {
+    left: 100%;
+}
+.our-clients .languages {
+    position: absolute;
+    left: initial;
+    right: -30px;
+}
+.our-clients .container {
+    position: relative;
+    z-index: 2;
+    width: 62%;
+}
+.our-clients .new-title {
+    margin-top: 30px;
+}
+.our-clients .new-title-text {
+    color: #fff;
+    font-size: 50px;
+    line-height: 1.1;
+}
+.our-clients .clients {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.our-clients .client {
+    margin-top: 50px;
+    width: 25%;
+}
+.our-clients .vertical-text {
+    position: absolute;
+    bottom: 30.5vh;
+    left: 80px;
+    width: 300px;
+    color: #fff;
+    font-family: "Roboto Thin";
+    font-size: 14px;
+    line-height: 1.4;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+}
+.our-clients.current,
+.our-clients.current-back,
+.our-clients.previous,
+.our-clients.previous-back {
+    animation: Left 0.9s 0s both;
+}
+.our-clients.current .languages a,
+.our-clients.current-back .languages a,
+.our-clients.previous .languages a,
+.our-clients.previous-back .languages a {
+    animation: Down 0.9s 0.9s both;
+}
+.our-clients.current .line,
+.our-clients.current-back .line,
+.our-clients.previous .line,
+.our-clients.previous-back .line {
+    animation: Down 0.6s 0.9s both;
+}
+.our-clients.current .sticker-text,
+.our-clients.current-back .sticker-text,
+.our-clients.previous .sticker-text,
+.our-clients.previous-back .sticker-text {
+    animation: fadeInRight 0.6s 1.5s both;
+}
+.our-clients.current .sticker:before,
+.our-clients.current-back .sticker:before,
+.our-clients.previous .sticker:before,
+.our-clients.previous-back .sticker:before {
+    animation: widthIncreaseStickerLine 0.6s 0.9s both;
+}
+.our-clients.current .text-container span,
+.our-clients.current-back .text-container span,
+.our-clients.previous .text-container span,
+.our-clients.previous-back .text-container span {
+    animation: Up 0.6s 1.5s both;
+}
+.our-clients.current .text-container:before,
+.our-clients.current-back .text-container:before,
+.our-clients.previous .text-container:before,
+.our-clients.previous-back .text-container:before {
+    animation: halfDown 0.6s 0.9s both;
+}
+.our-clients.current .client,
+.our-clients.current-back .client,
+.our-clients.previous .client,
+.our-clients.previous-back .client {
+    animation: fadeInUp 0.6s 1.5s both;
+}
+.our-clients.current .vertical-text,
+.our-clients.current-back .vertical-text,
+.our-clients.previous .vertical-text,
+.our-clients.previous-back .vertical-text {
+    animation: fadeIn 0.6s 2.1s both;
+}
+.our-clients.previous,
+.our-clients.previous-back {
+    animation: slideRight 0.9s 0.6s both;
+    animation-play-state: paused;
+}
+.our-clients.previous .languages a,
+.our-clients.previous-back .languages a {
+    animation-play-state: paused;
+}
+.our-clients.previous .line,
+.our-clients.previous-back .line {
+    animation-play-state: paused;
+}
+.our-clients.previous .sticker-text,
+.our-clients.previous-back .sticker-text {
+    animation-play-state: paused;
+}
+.our-clients.previous .sticker:before,
+.our-clients.previous-back .sticker:before {
+    animation-play-state: paused;
+}
+.our-clients.previous .text-container span,
+.our-clients.previous-back .text-container span {
+    animation-play-state: paused;
+}
+.our-clients.previous .text-container:before,
+.our-clients.previous-back .text-container:before {
+    animation-play-state: paused;
+}
+.our-clients.previous .client,
+.our-clients.previous-back .client {
+    animation-play-state: paused;
+}
+.our-clients.previous .vertical-text,
+.our-clients.previous-back .vertical-text {
+    animation-play-state: paused;
+}
+.our-clients.current-back {
+    animation: none;
+}
+.our-clients.previous-back {
+    animation-play-state: running;
+}
+.our-clients.about-company {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-height: 900px;
+    background: #000;
+}
+.our-clients.about-company .front-layer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1c;
+    transform-origin: 0 50%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+.our-clients.about-company .front-layer:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    content: "";
+    opacity: 0;
+}
+.our-clients.about-company .back-layer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-right: 50px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+.our-clients.about-company .open-form {
+    padding: 0;
+    color: #fff;
+    font-family: "Raleway ExtraBold";
+    font-size: 28px;
+    line-height: 1.1;
+    text-align: left;
+    transition: color 0.3s;
+}
+.our-clients.about-company .open-form span {
+    display: block;
+    color: #425cbb;
+    transition: color 0.3s;
+}
+.our-clients.about-company .open-form:hover {
+    color: #999;
+}
+.our-clients.about-company .open-form:hover span {
+    color: #999;
+}
+.our-clients.about-company.opened .front-layer {
+    transform: rotateY(15deg) scaleX(0.85);
+}
+.our-clients.about-company.opened .front-layer:after {
+    z-index: 9999;
+    opacity: 1;
+}
+.home-blog {
+    background: #fff;
+    box-shadow: 0 15px 50px 7px rgba(0, 0, 0, 0.3);
+    font-family: "Raleway Regular";
+    overflow: hidden;
+}
+.home-blog .languages {
+    position: absolute;
+    top: 250px;
+    left: 4%;
+}
+.home-blog .big-background-letter {
+    top: 0;
+    right: 7vh;
+    z-index: 2;
+    color: #444;
+    font-size: 58vh;
+    text-transform: lowercase;
+}
+.home-blog .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    padding: 15vh 100px 15vh 0;
+    width: 80%;
+    height: 100%;
+}
+.home-blog .blue-line {
+    position: absolute;
+    top: 0;
+    right: 35%;
+    width: 25%;
+    height: 380px;
+    background: #425cbb;
+}
+.home-blog .text-block {
+    -ms-flex-item-align: end;
+    width: 45%;
+    min-width: 560px;
+}
+.home-blog .new-title {
+    margin-top: 30px;
+}
+.home-blog .text-container {
+    display: inline-block;
+    line-height: 1.2;
+}
+.home-blog .new-title-text {
+    font-size: 44px;
+    line-height: 1.2;
+}
+.home-blog .text {
+    margin-top: 30px;
+    padding-left: 10%;
+    color: #444;
+    font-family: "Roboto Regular";
+    font-size: 16px;
+    line-height: 1.4;
+}
+.home-blog .special-buttons {
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+    padding-left: 10%;
+}
+.home-blog .special-button {
+    margin-right: 50px;
+    padding: 0;
+}
+.home-blog .image-block {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    width: 50%;
+}
+.home-blog .image-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    font-size: 0;
+    overflow: hidden;
+}
+.home-blog .image-container img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.home-blog .image-container:before {
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #444;
+    content: "";
+    transform: translate3d(-90%, 90%, 0);
+}
+.home-blog .date {
+    margin-top: 20px;
+    padding-right: 40px;
+    font-family: "Roboto Regular";
+    font-size: 16px;
+    text-align: right;
+}
+.home-blog.current,
+.home-blog.current-back,
+.home-blog.previous,
+.home-blog.previous-back {
+    animation: Right 0.9s 0s both;
+}
+.home-blog.current .languages a,
+.home-blog.current-back .languages a,
+.home-blog.previous .languages a,
+.home-blog.previous-back .languages a {
+    animation: Down 0.9s 0.9s both;
+}
+.home-blog.current .small-gray-lines .line,
+.home-blog.current-back .small-gray-lines .line,
+.home-blog.previous .small-gray-lines .line,
+.home-blog.previous-back .small-gray-lines .line {
+    animation: lineUp 1s 0.9s both;
+}
+.home-blog.current .small-gray-lines .line.down,
+.home-blog.current-back .small-gray-lines .line.down,
+.home-blog.previous .small-gray-lines .line.down,
+.home-blog.previous-back .small-gray-lines .line.down {
+    animation-name: lineDown;
+}
+.home-blog.current .big-background-letter,
+.home-blog.current-back .big-background-letter,
+.home-blog.previous .big-background-letter,
+.home-blog.previous-back .big-background-letter {
+    animation: fadeIn 0.9s 2.7s both;
+}
+.home-blog.current .blue-line,
+.home-blog.current-back .blue-line,
+.home-blog.previous .blue-line,
+.home-blog.previous-back .blue-line {
+    animation: Down 0.9s 0.9s both;
+}
+.home-blog.current .sticker-text,
+.home-blog.current-back .sticker-text,
+.home-blog.previous .sticker-text,
+.home-blog.previous-back .sticker-text {
+    animation: titleName 0.6s 1.5s both;
+}
+.home-blog.current .sticker:before,
+.home-blog.current-back .sticker:before,
+.home-blog.previous .sticker:before,
+.home-blog.previous-back .sticker:before {
+    animation: widthIncreaseStickerLine 0.6s 0.9s both;
+}
+.home-blog.current .text-container:before,
+.home-blog.current-back .text-container:before,
+.home-blog.previous .text-container:before,
+.home-blog.previous-back .text-container:before {
+    animation: halfDown 0.6s 0.9s both;
+}
+.home-blog.current .new-title-text,
+.home-blog.current-back .new-title-text,
+.home-blog.previous .new-title-text,
+.home-blog.previous-back .new-title-text {
+    animation: Up 0.6s 1.5s both;
+}
+.home-blog.current .text,
+.home-blog.current-back .text,
+.home-blog.previous .text,
+.home-blog.previous-back .text {
+    animation: fadeInUp 0.6s 2.1s both;
+}
+.home-blog.current .special-button,
+.home-blog.current-back .special-button,
+.home-blog.previous .special-button,
+.home-blog.previous-back .special-button {
+    animation: fadeInUp 0.6s 2.7s both;
+}
+.home-blog.current .animated-button,
+.home-blog.current-back .animated-button,
+.home-blog.previous .animated-button,
+.home-blog.previous-back .animated-button {
+    animation: fadeInUp 0.6s 3s both;
+}
+.home-blog.current .bottom-button span,
+.home-blog.current-back .bottom-button span,
+.home-blog.previous .bottom-button span,
+.home-blog.previous-back .bottom-button span {
+    animation: fadeInRight 0.9s 2.1s both;
+}
+.home-blog.current .bottom-button .line,
+.home-blog.current-back .bottom-button .line,
+.home-blog.previous .bottom-button .line,
+.home-blog.previous-back .bottom-button .line {
+    animation: Right 0.9s 1.2s both;
+}
+.home-blog.current .image-block .image-container img,
+.home-blog.current-back .image-block .image-container img,
+.home-blog.previous .image-block .image-container img,
+.home-blog.previous-back .image-block .image-container img {
+    animation: imageApear 0.9s linear 1.8s both;
+}
+.home-blog.current .image-block .image-container:before,
+.home-blog.current-back .image-block .image-container:before,
+.home-blog.previous .image-block .image-container:before,
+.home-blog.previous-back .image-block .image-container:before {
+    animation: beforeApear 1.8s linear 1.8s both;
+}
+.home-blog.current .image-block .date,
+.home-blog.current-back .image-block .date,
+.home-blog.previous .image-block .date,
+.home-blog.previous-back .image-block .date {
+    animation: fadeIn 0.9s 3.6s both;
+}
+.home-blog.previous,
+.home-blog.previous-back {
+    animation: slideLeft 0.9s 0.6s both;
+    animation-play-state: paused;
+}
+.home-blog.previous .languages a,
+.home-blog.previous-back .languages a {
+    animation-play-state: paused;
+}
+.home-blog.previous .small-gray-lines .line,
+.home-blog.previous-back .small-gray-lines .line {
+    animation-play-state: paused;
+}
+.home-blog.previous .big-background-letter,
+.home-blog.previous-back .big-background-letter {
+    animation-play-state: paused;
+}
+.home-blog.previous .blue-line,
+.home-blog.previous-back .blue-line {
+    animation-play-state: paused;
+}
+.home-blog.previous .sticker-text,
+.home-blog.previous-back .sticker-text {
+    animation-play-state: paused;
+}
+.home-blog.previous .sticker:before,
+.home-blog.previous-back .sticker:before {
+    animation-play-state: paused;
+}
+.home-blog.previous .text-container:before,
+.home-blog.previous-back .text-container:before {
+    animation-play-state: paused;
+}
+.home-blog.previous .new-title-text,
+.home-blog.previous-back .new-title-text {
+    animation-play-state: paused;
+}
+.home-blog.previous .text,
+.home-blog.previous-back .text {
+    animation-play-state: paused;
+}
+.home-blog.previous .special-button,
+.home-blog.previous-back .special-button {
+    animation-play-state: paused;
+}
+.home-blog.previous .animated-button,
+.home-blog.previous-back .animated-button {
+    animation-play-state: paused;
+}
+.home-blog.previous .bottom-button span,
+.home-blog.previous-back .bottom-button span {
+    animation-play-state: paused;
+}
+.home-blog.previous .bottom-button .line,
+.home-blog.previous-back .bottom-button .line {
+    animation-play-state: paused;
+}
+.home-blog.previous .image-block .image-container img,
+.home-blog.previous-back .image-block .image-container img {
+    animation-play-state: paused;
+}
+.home-blog.previous .image-block .image-container:before,
+.home-blog.previous-back .image-block .image-container:before {
+    animation-play-state: paused;
+}
+.home-blog.previous .image-block .date,
+.home-blog.previous-back .image-block .date {
+    animation-play-state: paused;
+}
+.home-blog.current-back {
+    animation: none;
+}
+.home-blog.previous-back {
+    animation-play-state: running;
+}
+.home-contacts {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 140px 0 60px;
+    background: #fff;
+    box-shadow: 0 15px 50px 7px rgba(0, 0, 0, 0.3);
+    font-family: "Raleway Regular";
+    overflow: hidden;
+}
+.home-contacts .languages {
+    bottom: initial;
+    top: 550px;
+}
+.home-contacts .line {
+    opacity: 0.1;
+}
+.home-contacts .big-background-letter {
+    top: -15vh;
+    right: 50vh;
+    z-index: 1;
+    font-size: 130vh;
+}
+.home-contacts .home-contacts-title {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    position: relative;
+    z-index: 2;
+    padding: 4% 10% 3% 4%;
+    width: 57%;
+    background-color: #1c1c1c;
+}
+.home-contacts .home-contacts-title p {
+    color: #fff;
+    font-family: "Raleway ExtraBold";
+    font-size: 59px;
+    line-height: 1.2;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.home-contacts .home-contacts-title span {
+    display: block;
+    margin-top: 40px;
+    color: #425cbb;
+    font-size: 30px;
+    text-align: right;
+    text-transform: initial;
+    letter-spacing: initial;
+}
+.home-contacts .form {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    position: relative;
+    right: 1%;
+    z-index: 2;
+    padding: 100px 7% 65px;
+    width: 40%;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+.home-contacts .form .close-form {
+    display: none;
+}
+.home-contacts .home-contacts-info {
+    position: absolute;
+    top: 57.5vh;
+    left: 7%;
+    z-index: 3;
+}
+.home-contacts .home-contacts-info li {
+    margin-bottom: 30px;
+    color: #444;
+    font-size: 16px;
+}
+.home-contacts .home-contacts-info li:last-of-type {
+    margin-bottom: 0;
+}
+.home-contacts .home-contacts-info p {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: "Raleway ExtraBold";
+}
+.home-contacts .home-contacts-info p + span {
+    font-family: "Raleway Medium";
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.home-contacts .home-contacts-info a {
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+    transition: color 0.3s;
+}
+.home-contacts .home-contacts-info a:hover {
+    color: #425cbb;
+}
+.home-contacts .home-contacts-info .type {
+    display: block;
+    margin-bottom: 12px;
+}
+.home-contacts .home-contacts-info + .home-contacts-info {
+    left: 28%;
+}
+.home-contacts.current,
+.home-contacts.current-back,
+.home-contacts.previous,
+.home-contacts.previous-back {
+    animation: Right 0.9s 0s both;
+}
+.home-contacts.current .languages a,
+.home-contacts.current-back .languages a,
+.home-contacts.previous .languages a,
+.home-contacts.previous-back .languages a {
+    animation: Down 0.9s 0.9s both;
+}
+.home-contacts.current .big-background-letter,
+.home-contacts.current-back .big-background-letter,
+.home-contacts.previous .big-background-letter,
+.home-contacts.previous-back .big-background-letter {
+    animation: fadeIn 0.9s 1.2s both;
+}
+.home-contacts.current .home-contacts-title,
+.home-contacts.current-back .home-contacts-title,
+.home-contacts.previous .home-contacts-title,
+.home-contacts.previous-back .home-contacts-title {
+    animation: fadeInRight 0.9s 0.9s both;
+}
+.home-contacts.current .form,
+.home-contacts.current-back .form,
+.home-contacts.previous .form,
+.home-contacts.previous-back .form {
+    animation: fadeInLeft 0.9s 0.9s both;
+}
+.home-contacts.current .home-contacts-info li:nth-of-type(1),
+.home-contacts.current-back .home-contacts-info li:nth-of-type(1),
+.home-contacts.previous .home-contacts-info li:nth-of-type(1),
+.home-contacts.previous-back .home-contacts-info li:nth-of-type(1) {
+    animation: fadeInUp 0.9s 0.9s both;
+}
+.home-contacts.current .home-contacts-info li:nth-of-type(2),
+.home-contacts.current-back .home-contacts-info li:nth-of-type(2),
+.home-contacts.previous .home-contacts-info li:nth-of-type(2),
+.home-contacts.previous-back .home-contacts-info li:nth-of-type(2) {
+    animation: fadeInUp 0.9s 1.2s both;
+}
+.home-contacts.current .home-contacts-info li:nth-of-type(3),
+.home-contacts.current-back .home-contacts-info li:nth-of-type(3),
+.home-contacts.previous .home-contacts-info li:nth-of-type(3),
+.home-contacts.previous-back .home-contacts-info li:nth-of-type(3) {
+    animation: fadeInUp 0.9s 1.5s both;
+}
+.home-contacts.current .home-contacts-info li:nth-of-type(4),
+.home-contacts.current-back .home-contacts-info li:nth-of-type(4),
+.home-contacts.previous .home-contacts-info li:nth-of-type(4),
+.home-contacts.previous-back .home-contacts-info li:nth-of-type(4) {
+    animation: fadeInUp 0.9s 1.8s both;
+}
+.home-contacts.current .small-gray-lines .line,
+.home-contacts.current-back .small-gray-lines .line,
+.home-contacts.previous .small-gray-lines .line,
+.home-contacts.previous-back .small-gray-lines .line {
+    animation: lineUp 1s 1.2s both;
+}
+.home-contacts.current .small-gray-lines .line.down,
+.home-contacts.current-back .small-gray-lines .line.down,
+.home-contacts.previous .small-gray-lines .line.down,
+.home-contacts.previous-back .small-gray-lines .line.down {
+    animation-name: lineDown;
+}
+.home-contacts.previous,
+.home-contacts.previous-back {
+    animation: slideLeft 0.9s 0.6s both;
+    animation-play-state: paused;
+}
+.home-contacts.previous .languages a,
+.home-contacts.previous-back .languages a {
+    animation-play-state: paused;
+}
+.home-contacts.previous .big-background-letter,
+.home-contacts.previous-back .big-background-letter {
+    animation-play-state: paused;
+}
+.home-contacts.previous .home-contacts-title,
+.home-contacts.previous-back .home-contacts-title {
+    animation-play-state: paused;
+}
+.home-contacts.previous .form,
+.home-contacts.previous-back .form {
+    animation-play-state: paused;
+}
+.home-contacts.previous .home-contacts-info li:nth-of-type(1),
+.home-contacts.previous-back .home-contacts-info li:nth-of-type(1) {
+    animation-play-state: paused;
+}
+.home-contacts.previous .home-contacts-info li:nth-of-type(2),
+.home-contacts.previous-back .home-contacts-info li:nth-of-type(2) {
+    animation-play-state: paused;
+}
+.home-contacts.previous .home-contacts-info li:nth-of-type(3),
+.home-contacts.previous-back .home-contacts-info li:nth-of-type(3) {
+    animation-play-state: paused;
+}
+.home-contacts.previous .home-contacts-info li:nth-of-type(4),
+.home-contacts.previous-back .home-contacts-info li:nth-of-type(4) {
+    animation-play-state: paused;
+}
+.home-contacts.previous .small-gray-lines .line,
+.home-contacts.previous-back .small-gray-lines .line {
+    animation-play-state: paused;
+}
+.home-contacts.current-back {
+    animation: none;
+}
+.home-contacts.previous-back {
+    animation-play-state: running;
+}
+.services {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    min-height: 900px;
+    background: #1c1c1c;
+    font-family: "Raleway Regular";
+    overflow: hidden;
+}
+.services .big-background-letter {
+    position: fixed;
+    top: 10vh;
+    right: -4vh;
+    font-size: 110vh;
+}
+.services .lines {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    left: 19%;
+    width: 62%;
+    height: 100%;
+}
+.services .line {
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #444;
+}
+.services .line--1 {
+    left: -1px;
+}
+.services .line--2 {
+    left: calc(100% / 3);
+}
+.services .line--3 {
+    left: calc(100% / 3 * 2);
+}
+.services .line--4 {
+    left: 100%;
+}
+.services .container {
+    position: relative;
+    z-index: 2;
+    width: 62%;
+}
+.services .services-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 3;
+    margin-top: 50px;
+}
+.services .item {
+    position: relative;
+    margin-top: 30px;
+    width: calc(100% / 3);
+}
+.services .item:hover .index {
+    color: #425cbb;
+}
+.services .index {
+    display: inline-block;
+    color: #999;
+    font-family: "Roboto Regular";
+    font-size: 16px;
+    overflow: hidden;
+    transform-origin: 0 100%;
+    transform: rotate(-90deg);
+    transition: color 0.3s;
+}
+.services .index span {
+    display: block;
+    padding: 5px 10px;
+}
+.services .content {
+    overflow: hidden;
+}
+.services .content-title {
+    position: relative;
+    margin-bottom: 25px;
+    color: #fff;
+    font-family: "Raleway Bold";
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.services .content-title-text {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+.services .content-title-text:before {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 3px;
+    width: 0;
+    height: 7px;
+    background: #425cbb;
+    content: "";
+    transition: width 0.3s;
+}
+.services .content-title:hover .content-title-text:before {
+    width: 100%;
+}
+.services .content-list {
+    margin-top: 25px;
+}
+.services .content-list a {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 17px;
+    transition: font-size 0.3s, color 0.3s;
+}
+.services .content-list a:hover {
+    color: #425cbb;
+}
+.services .content-text {
+    margin-top: 25px;
+    color: #fff;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.services.current,
+.services.current-back,
+.services.page,
+.services.previous,
+.services.previous-back {
+    animation: fadeIn 0.6s 0s both;
+}
+.services.current .languages a,
+.services.current-back .languages a,
+.services.page .languages a,
+.services.previous .languages a,
+.services.previous-back .languages a {
+    animation: Down 0.9s 0.9s both;
+}
+.services.current .big-background-letter,
+.services.current-back .big-background-letter,
+.services.page .big-background-letter,
+.services.previous .big-background-letter,
+.services.previous-back .big-background-letter {
+    animation: fadeIn 0.6s 0.9s both;
+}
+.services.current .copyright,
+.services.current-back .copyright,
+.services.page .copyright,
+.services.previous .copyright,
+.services.previous-back .copyright {
+    overflow: hidden;
+}
+.services.current .copyright p,
+.services.current-back .copyright p,
+.services.page .copyright p,
+.services.previous .copyright p,
+.services.previous-back .copyright p {
+    padding: 10px 0;
+    animation: Up 0.6s 0.9s both;
+}
+.services.current .facebook,
+.services.current .instagram,
+.services.current-back .facebook,
+.services.current-back .instagram,
+.services.page .facebook,
+.services.page .instagram,
+.services.previous .facebook,
+.services.previous .instagram,
+.services.previous-back .facebook,
+.services.previous-back .instagram {
+    animation: social 0.6s 0.9s both;
+}
+.services.current .behance,
+.services.current-back .behance,
+.services.page .behance,
+.services.previous .behance,
+.services.previous-back .behance {
+    animation: fadeInRight 0.6s 0.9s both;
+}
+.services.current .line,
+.services.current-back .line,
+.services.page .line,
+.services.previous .line,
+.services.previous-back .line {
+    animation: Down 0.6s 0s both;
+}
+.services.current .line--1,
+.services.current-back .line--1,
+.services.page .line--1,
+.services.previous .line--1,
+.services.previous-back .line--1 {
+    animation-delay: 0.9s;
+}
+.services.current .line--2,
+.services.current-back .line--2,
+.services.page .line--2,
+.services.previous .line--2,
+.services.previous-back .line--2 {
+    animation-delay: 1.5s;
+}
+.services.current .line--3,
+.services.current-back .line--3,
+.services.page .line--3,
+.services.previous .line--3,
+.services.previous-back .line--3 {
+    animation-delay: 2.1s;
+}
+.services.current .line--4,
+.services.current-back .line--4,
+.services.page .line--4,
+.services.previous .line--4,
+.services.previous-back .line--4 {
+    animation-delay: 2.7s;
+}
+.services.current .sticker-text,
+.services.current-back .sticker-text,
+.services.page .sticker-text,
+.services.previous .sticker-text,
+.services.previous-back .sticker-text {
+    animation: fadeInRight 0.6s 1.5s both;
+}
+.services.current .sticker:before,
+.services.current-back .sticker:before,
+.services.page .sticker:before,
+.services.previous .sticker:before,
+.services.previous-back .sticker:before {
+    animation: widthIncreaseStickerLine 0.6s 0.9s both;
+}
+.services.current .item .index span,
+.services.current-back .item .index span,
+.services.page .item .index span,
+.services.previous .item .index span,
+.services.previous-back .item .index span {
+    animation: Up 0.6s 0s both;
+}
+.services.current .item .content-title-text,
+.services.current-back .item .content-title-text,
+.services.page .item .content-title-text,
+.services.previous .item .content-title-text,
+.services.previous-back .item .content-title-text {
+    animation: Right 0.6s 0s both;
+}
+.services.current .item .content-list a,
+.services.current-back .item .content-list a,
+.services.page .item .content-list a,
+.services.previous .item .content-list a,
+.services.previous-back .item .content-list a {
+    animation: Right 0.6s 0s both;
+}
+.services.current .item .content-text,
+.services.current-back .item .content-text,
+.services.page .item .content-text,
+.services.previous .item .content-text,
+.services.previous-back .item .content-text {
+    animation: Right 0.6s 0s both;
+}
+.services.current .item:nth-child(1) .index span,
+.services.current .item:nth-child(4) .index span,
+.services.current-back .item:nth-child(1) .index span,
+.services.current-back .item:nth-child(4) .index span,
+.services.page .item:nth-child(1) .index span,
+.services.page .item:nth-child(4) .index span,
+.services.previous .item:nth-child(1) .index span,
+.services.previous .item:nth-child(4) .index span,
+.services.previous-back .item:nth-child(1) .index span,
+.services.previous-back .item:nth-child(4) .index span {
+    animation-delay: 0.9s;
+}
+.services.current .item:nth-child(1) .content-title-text,
+.services.current .item:nth-child(4) .content-title-text,
+.services.current-back .item:nth-child(1) .content-title-text,
+.services.current-back .item:nth-child(4) .content-title-text,
+.services.page .item:nth-child(1) .content-title-text,
+.services.page .item:nth-child(4) .content-title-text,
+.services.previous .item:nth-child(1) .content-title-text,
+.services.previous .item:nth-child(4) .content-title-text,
+.services.previous-back .item:nth-child(1) .content-title-text,
+.services.previous-back .item:nth-child(4) .content-title-text {
+    animation-delay: 0.9s;
+}
+.services.current .item:nth-child(1) .content-list a,
+.services.current .item:nth-child(4) .content-list a,
+.services.current-back .item:nth-child(1) .content-list a,
+.services.current-back .item:nth-child(4) .content-list a,
+.services.page .item:nth-child(1) .content-list a,
+.services.page .item:nth-child(4) .content-list a,
+.services.previous .item:nth-child(1) .content-list a,
+.services.previous .item:nth-child(4) .content-list a,
+.services.previous-back .item:nth-child(1) .content-list a,
+.services.previous-back .item:nth-child(4) .content-list a {
+    animation-delay: 0.9s;
+}
+.services.current .item:nth-child(1) .content-text,
+.services.current .item:nth-child(4) .content-text,
+.services.current-back .item:nth-child(1) .content-text,
+.services.current-back .item:nth-child(4) .content-text,
+.services.page .item:nth-child(1) .content-text,
+.services.page .item:nth-child(4) .content-text,
+.services.previous .item:nth-child(1) .content-text,
+.services.previous .item:nth-child(4) .content-text,
+.services.previous-back .item:nth-child(1) .content-text,
+.services.previous-back .item:nth-child(4) .content-text {
+    animation-delay: 0.9s;
+}
+.services.current .item:nth-child(2) .index span,
+.services.current .item:nth-child(5) .index span,
+.services.current-back .item:nth-child(2) .index span,
+.services.current-back .item:nth-child(5) .index span,
+.services.page .item:nth-child(2) .index span,
+.services.page .item:nth-child(5) .index span,
+.services.previous .item:nth-child(2) .index span,
+.services.previous .item:nth-child(5) .index span,
+.services.previous-back .item:nth-child(2) .index span,
+.services.previous-back .item:nth-child(5) .index span {
+    animation-delay: 1.5s;
+}
+.services.current .item:nth-child(2) .content-title-text,
+.services.current .item:nth-child(5) .content-title-text,
+.services.current-back .item:nth-child(2) .content-title-text,
+.services.current-back .item:nth-child(5) .content-title-text,
+.services.page .item:nth-child(2) .content-title-text,
+.services.page .item:nth-child(5) .content-title-text,
+.services.previous .item:nth-child(2) .content-title-text,
+.services.previous .item:nth-child(5) .content-title-text,
+.services.previous-back .item:nth-child(2) .content-title-text,
+.services.previous-back .item:nth-child(5) .content-title-text {
+    animation-delay: 1.5s;
+}
+.services.current .item:nth-child(2) .content-list a,
+.services.current .item:nth-child(5) .content-list a,
+.services.current-back .item:nth-child(2) .content-list a,
+.services.current-back .item:nth-child(5) .content-list a,
+.services.page .item:nth-child(2) .content-list a,
+.services.page .item:nth-child(5) .content-list a,
+.services.previous .item:nth-child(2) .content-list a,
+.services.previous .item:nth-child(5) .content-list a,
+.services.previous-back .item:nth-child(2) .content-list a,
+.services.previous-back .item:nth-child(5) .content-list a {
+    animation-delay: 1.5s;
+}
+.services.current .item:nth-child(2) .content-text,
+.services.current .item:nth-child(5) .content-text,
+.services.current-back .item:nth-child(2) .content-text,
+.services.current-back .item:nth-child(5) .content-text,
+.services.page .item:nth-child(2) .content-text,
+.services.page .item:nth-child(5) .content-text,
+.services.previous .item:nth-child(2) .content-text,
+.services.previous .item:nth-child(5) .content-text,
+.services.previous-back .item:nth-child(2) .content-text,
+.services.previous-back .item:nth-child(5) .content-text {
+    animation-delay: 1.5s;
+}
+.services.current .item:nth-child(3) .index span,
+.services.current .item:nth-child(6) .index span,
+.services.current-back .item:nth-child(3) .index span,
+.services.current-back .item:nth-child(6) .index span,
+.services.page .item:nth-child(3) .index span,
+.services.page .item:nth-child(6) .index span,
+.services.previous .item:nth-child(3) .index span,
+.services.previous .item:nth-child(6) .index span,
+.services.previous-back .item:nth-child(3) .index span,
+.services.previous-back .item:nth-child(6) .index span {
+    animation-delay: 2.1s;
+}
+.services.current .item:nth-child(3) .content-title-text,
+.services.current .item:nth-child(6) .content-title-text,
+.services.current-back .item:nth-child(3) .content-title-text,
+.services.current-back .item:nth-child(6) .content-title-text,
+.services.page .item:nth-child(3) .content-title-text,
+.services.page .item:nth-child(6) .content-title-text,
+.services.previous .item:nth-child(3) .content-title-text,
+.services.previous .item:nth-child(6) .content-title-text,
+.services.previous-back .item:nth-child(3) .content-title-text,
+.services.previous-back .item:nth-child(6) .content-title-text {
+    animation-delay: 2.1s;
+}
+.services.current .item:nth-child(3) .content-list a,
+.services.current .item:nth-child(6) .content-list a,
+.services.current-back .item:nth-child(3) .content-list a,
+.services.current-back .item:nth-child(6) .content-list a,
+.services.page .item:nth-child(3) .content-list a,
+.services.page .item:nth-child(6) .content-list a,
+.services.previous .item:nth-child(3) .content-list a,
+.services.previous .item:nth-child(6) .content-list a,
+.services.previous-back .item:nth-child(3) .content-list a,
+.services.previous-back .item:nth-child(6) .content-list a {
+    animation-delay: 2.1s;
+}
+.services.current .item:nth-child(3) .content-text,
+.services.current .item:nth-child(6) .content-text,
+.services.current-back .item:nth-child(3) .content-text,
+.services.current-back .item:nth-child(6) .content-text,
+.services.page .item:nth-child(3) .content-text,
+.services.page .item:nth-child(6) .content-text,
+.services.previous .item:nth-child(3) .content-text,
+.services.previous .item:nth-child(6) .content-text,
+.services.previous-back .item:nth-child(3) .content-text,
+.services.previous-back .item:nth-child(6) .content-text {
+    animation-delay: 2.1s;
+}
+.services.current,
+.services.current-back {
+    animation: Left 0.6s 0s both;
+}
+.services.previous,
+.services.previous-back {
+    animation: toRight 0.6s 0.6s both;
+    animation-play-state: paused;
+}
+.services.previous .languages a,
+.services.previous-back .languages a {
+    animation-play-state: paused;
+}
+.services.previous .big-background-letter,
+.services.previous-back .big-background-letter {
+    animation-play-state: paused;
+}
+.services.previous .copyright p,
+.services.previous-back .copyright p {
+    animation-play-state: paused;
+}
+.services.previous .facebook,
+.services.previous .instagram,
+.services.previous-back .facebook,
+.services.previous-back .instagram {
+    animation-play-state: paused;
+}
+.services.previous .behance,
+.services.previous-back .behance {
+    animation-play-state: paused;
+}
+.services.previous .line,
+.services.previous-back .line {
+    animation-play-state: paused;
+}
+.services.previous .sticker-text,
+.services.previous-back .sticker-text {
+    animation-play-state: paused;
+}
+.services.previous .sticker:before,
+.services.previous-back .sticker:before {
+    animation-play-state: paused;
+}
+.services.previous .item .index span,
+.services.previous-back .item .index span {
+    animation-play-state: paused;
+}
+.services.previous .item .content-title-text,
+.services.previous-back .item .content-title-text {
+    animation-play-state: paused;
+}
+.services.previous .item .content-list a,
+.services.previous-back .item .content-list a {
+    animation-play-state: paused;
+}
+.services.previous .item .content-text,
+.services.previous-back .item .content-text {
+    animation-play-state: paused;
+}
+.services.current-back {
+    animation: none;
+}
+.services.previous-back {
+    animation-play-state: running;
+}
+@media (min-width: 1921px) {
+    .clock .text-block-header {
+        font-size: 58px;
+    }
+    .clock .text-block-slogan {
+        font-size: 23px;
+    }
+    .company-description .container {
+        width: 62%;
+    }
+    .company-description .image-container:first-of-type {
+        max-height: 1000px;
+    }
+    .audi .audi-block-image {
+        min-height: 900px;
+    }
+    .audi .project-name {
+        left: -300px;
+        font-size: 300px;
+    }
+    .our-best-works .lines .line--2 {
+        left: 20%;
+    }
+    .our-best-works .info {
+        width: 20%;
+    }
+    .our-best-works.opened .front-layer {
+        transform: rotateY(10deg) scaleX(0.85);
+    }
+    .home-blog .container {
+        padding: 20vh 50px 20vh 0;
+        width: 65%;
+    }
+    .home-blog .text-block {
+        max-width: 700px;
+    }
+    .home-contacts {
+        padding-bottom: 100px;
+    }
+    .home-contacts .home-contacts-title {
+        width: 52%;
+    }
+    .home-contacts .form {
+        right: 4%;
+        padding: 100px 4% 65px;
+        width: 32%;
+    }
+    .services .container {
+        top: -100px;
+    }
+}
+@media (max-width: 1680px) {
+    .clock .text-block {
+        top: 21vh;
+        left: 12vh;
+        width: 35%;
+    }
+    .clock .big-background-letter {
+        top: -50vh;
+        right: 72vw;
+    }
+    .company-description .phrase {
+        font-size: 70px;
+    }
+    .company-description .phrase-translation {
+        margin-top: 30px;
+        font-size: 40px;
+    }
+    .company-description .phrase-description {
+        margin-top: 40px;
+        font-size: 22px;
+        line-height: 1.2;
+    }
+    .company-description .crossed-button {
+        margin-top: 40px;
+    }
+    .company-description .crossed-button span {
+        font-size: 18px;
+    }
+    .audi .audi-block-image {
+        min-height: 800px;
+    }
+    .audi .portfolio-right-panel .date {
+        margin-bottom: 75px;
+    }
+    .audi .info {
+        margin-top: 100px;
+        margin-right: 1%;
+        width: 40%;
+    }
+    .audi .project-name {
+        left: -200px;
+        font-size: 200px;
+    }
+    .audi .about-work p {
+        font-size: 25px;
+    }
+    .audi .special-button {
+        margin-right: 75px;
+    }
+    .our-best-works .container {
+        width: 80%;
+    }
+    .our-best-works .lines .line--2 {
+        left: 25%;
+    }
+    .our-best-works .info {
+        width: 25%;
+    }
+    .our-best-works .portfolio__item {
+        height: 300px;
+    }
+    .our-best-works .portfolio__item--audi {
+        left: -30px;
+        top: -30px;
+    }
+    .our-best-works .portfolio__item--dela .project-name {
+        right: -50px;
+    }
+    .our-best-works .portfolio__item--euro-club .project-name {
+        left: -105px;
+    }
+    .our-best-works .portfolio__item--your-project {
+        left: 30px;
+        top: 30px;
+    }
+    .our-best-works .portfolio__item--your-project .project-name {
+        right: -50px;
+    }
+    .our-best-works .project-name {
+        padding: 10px 20px;
+        font-size: 34px;
+    }
+    .our-best-works .form {
+        width: 25%;
+    }
+    .our-best-works.opened .front-layer {
+        transform: rotateY(20deg) scaleX(0.8);
+    }
+    .our-clients .new-title-text {
+        font-size: 40px;
+    }
+    .our-clients.about-company {
+        min-height: 800px;
+    }
+    .our-clients.about-company .form {
+        width: 25%;
+    }
+    .our-clients.about-company.opened .front-layer {
+        transform: rotateY(20deg) scaleX(0.8);
+    }
+    .home-blog .container {
+        padding-right: 0;
+    }
+    .home-blog .image-container {
+        height: 450px;
+    }
+    .home-contacts .home-contacts-title {
+        padding: 3% 8% 2% 3%;
+    }
+    .home-contacts .home-contacts-title p {
+        font-size: 45px;
+    }
+    .services {
+        min-height: 800px;
+    }
+    .services .index {
+        font-size: 14px;
+    }
+    .services .content-title {
+        margin-bottom: 20px;
+        font-size: 19px;
+        line-height: 26px;
+    }
+    .services .content-list {
+        margin-top: 20px;
+    }
+    .services .content-list a {
+        margin-bottom: 7px;
+        font-size: 16px;
+    }
+    .services .content-text {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 1.3;
+    }
+}
+@media (max-width: 1366px) {
+    .clock .big-background-letter {
+        top: -38vh;
+        right: 72vw;
+        font-size: 100vh;
+    }
+    .clock .scroll {
+        bottom: 5vh;
+    }
+    .clock .watch,
+    .clock .watch-shadow {
+        transform: scale(0.7);
+    }
+    .clock .text-block {
+        top: 18vh;
+        left: 9vh;
+        width: 45%;
+    }
+    .clock .text-block-header {
+        font-size: 43px;
+    }
+    .clock .text-block-slogan {
+        font-size: 15px;
+    }
+    .company-description .phrase {
+        font-size: 50px;
+    }
+    .company-description .phrase-translation {
+        margin-top: 20px;
+        font-size: 26px;
+    }
+    .company-description .phrase-description {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .company-description .crossed-button {
+        margin-top: 30px;
+    }
+    .company-description .crossed-button span {
+        font-size: 16px;
+    }
+    .company-description .image-container:first-of-type {
+        height: 90%;
+        max-height: 700px;
+        min-height: 500px;
+    }
+    .company-description .image-container:last-of-type {
+        bottom: 5vh;
+        width: 35%;
+    }
+    .company-description .rotated-text {
+        right: 30px;
+        top: 300px;
+    }
+    .audi .audi-block-image {
+        min-height: 650px;
+    }
+    .audi .portfolio-right-panel .date {
+        margin-bottom: 50px;
+    }
+    .audi .info {
+        margin-top: 50px;
+        margin-right: 7%;
+        width: 35%;
+    }
+    .audi .project-name {
+        left: -120px;
+        font-size: 135px;
+    }
+    .audi .about-work {
+        width: 85%;
+    }
+    .audi .about-work p {
+        font-size: 20px;
+    }
+    .audi .special-button {
+        margin-left: 15%;
+    }
+    .our-best-works .back-layer,
+    .our-best-works .front-layer {
+        min-height: 650px;
+    }
+    .our-best-works .back-layer {
+        padding-right: 2%;
+    }
+    .our-best-works .container {
+        width: 83%;
+    }
+    .our-best-works .languages {
+        left: 20px;
+    }
+    .our-best-works .lines .line--2 {
+        left: 25%;
+    }
+    .our-best-works .lines .line--3 {
+        right: calc(58% - 20px);
+    }
+    .our-best-works .lines .line--4 {
+        right: 29%;
+    }
+    .our-best-works .lines .line--5 {
+        right: 20px;
+    }
+    .our-best-works .info {
+        width: 25%;
+    }
+    .our-best-works .new-title {
+        margin-top: 20px;
+    }
+    .our-best-works .new-title-text {
+        font-size: 50px;
+        line-height: 1.1;
+    }
+    .our-best-works .special-button {
+        margin-top: 50px;
+        height: 45px;
+        line-height: 45px;
+        letter-spacing: 1px;
+    }
+    .our-best-works .portfolio {
+        width: 58%;
+    }
+    .our-best-works .portfolio__item {
+        height: 210px;
+    }
+    .our-best-works .portfolio__item--audi {
+        left: -20px;
+        top: -20px;
+    }
+    .our-best-works .portfolio__item--dela .project-name {
+        right: -30px;
+    }
+    .our-best-works .portfolio__item--euro-club .project-name {
+        left: -75px;
+    }
+    .our-best-works .portfolio__item--your-project {
+        left: 20px;
+        top: 20px;
+    }
+    .our-best-works .portfolio__item--your-project .project-name {
+        right: -20px;
+    }
+    .our-best-works .project-name {
+        padding: 10px 20px;
+        font-size: 34px;
+    }
+    .our-best-works.opened .front-layer {
+        transform: rotateY(15deg) scaleX(0.8);
+    }
+    .our-clients .container,
+    .our-clients .lines {
+        width: 68%;
+    }
+    .our-clients .container {
+        top: 0px;
+    }
+    .our-clients .new-title {
+        margin-top: 15px;
+    }
+    .our-clients .new-title-text {
+        font-size: 30px;
+    }
+    .our-clients .clients {
+        margin-top: 30px;
+    }
+    .our-clients .client {
+        margin-top: 20px;
+        text-align:center !important;
+    }
+    .our-clients .vertical-text {
+        bottom: 10.5vh;
+        left: 30px;
+    }
+    .our-clients.about-company {
+        min-height: 650px;
+    }
+    .our-clients.about-company .open-form {
+        font-size: 24px;
+    }
+    .our-clients.about-company .back-layer {
+        padding-right: 2%;
+    }
+    .our-clients.about-company.opened .front-layer {
+        transform: rotateY(15deg) scaleX(0.8);
+    }
+    .home-blog .container {
+        padding: 5vh 0;
+        width: 82%;
+        height: 50%;
+        margin-left: 137px;
+    }
+    .home-blog .blue-line {
+        right: 30%;
+        height: 280px;
+    }
+    .home-blog .text-block {
+        min-width: 440px;
+    }
+    .home-blog .text-container:before {
+        height: 20px;
+    }
+    .home-blog .new-title-text {
+        font-size: 32px;
+    }
+    .home-blog .special-button {
+        margin-right: 50px;
+        width: 40%;
+    }
+    .home-blog .image-block {
+        width: 45%;
+    }
+    .home-blog .image-container {
+        height: 300px;
+    }
+    .home-blog .date {
+        margin-top: 10px;
+        padding-right: 20px;
+    }
+    .home-contacts {
+        padding: 100px 0 40px;
+    }
+    .home-contacts .languages {
+        left: 20px;
+        top: 450px;
+    }
+    .home-contacts .home-contacts-title {
+        padding: 3% 7% 2% 3%;
+        width: 58%;
+    }
+    .home-contacts .home-contacts-title p {
+        font-size: 34px;
+        line-height: 1.1;
+        letter-spacing: 2px;
+    }
+    .home-contacts .home-contacts-title span {
+        margin-top: 25px;
+        font-size: 24px;
+    }
+    .home-contacts .form {
+        right: 1%;
+        padding: 60px 5% 45px;
+        width: 36%;
+    }
+    .home-contacts .home-contacts-info li {
+        margin-bottom: 30px;
+    }
+    .home-contacts .home-contacts-info .type {
+        margin-bottom: 10px;
+    }
+    .home-contacts .home-contacts-info a {
+        margin-bottom: 5px;
+    }
+    .services {
+        min-height: 650px;
+    }
+    .services .lines {
+        left: 10%;
+        width: 80%;
+    }
+    .services .container {
+        width: 80%;
+    }
+    .services .services-list {
+        margin-top: 10px;
+    }
+    .services .item {
+        margin-top: 10px;
+    }
+    .services .index {
+        font-size: 12px;
+    }
+    .services .index span {
+        padding: 3px 5px;
+    }
+    .services .content-title {
+        margin-bottom: 15px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .services .content-list {
+        margin-top: 15px;
+    }
+    .services .content-list a {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    .services .content-text {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 1024px) {
+    .clock .watch-light,
+    .clock .watch-shadow {
+        display: none;
+    }
+    .clock .hours-container,
+    .clock .seconds-container {
+        zoom: 0.65;
+    }
+    .clock .minutes-container {
+        zoom: 0.6;
+    }
+    .clock .watch {
+        background-size: 20%;
+    }
+    .clock .text-block {
+        top: 175px;
+        left: 25px;
+    }
+    .clock .text-container {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .company-description .phrase {
+        font-size: 34px;
+    }
+    .company-description .phrase-description {
+        font-size: 18px;
+    }
+    .company-description .image-container:first-of-type {
+        height: 60%;
+    }
+    .company-description .image-container:last-of-type {
+        bottom: 15vh;
+        width: 40%;
+    }
+    .company-description .rotated-text {
+        top: 350px;
+    }
+    .audi .sticker {
+        margin-bottom: 10px;
+    }
+    .audi .sticker-text {
+        color: #000;
+    }
+    .audi .sticker:before {
+        background: #000;
+    }
+    .audi .about-work p {
+        color: #000;
+        font-family: "Roboto Medium";
+    }
+    .our-best-works .back-layer {
+        padding-right: 4%;
+    }
+    .our-best-works .container {
+        width: 83%;
+    }
+    .our-best-works .lines .line--2 {
+        left: 27%;
+    }
+    .our-best-works .lines .line--3 {
+        right: calc(65% - 30px);
+    }
+    .our-best-works .lines .line--4 {
+        right: 32.5%;
+    }
+    .our-best-works .lines .line--5 {
+        right: 30px;
+    }
+    .our-best-works .info {
+        width: 27%;
+    }
+    .our-best-works .new-title {
+        margin-top: 20px;
+    }
+    .our-best-works .new-title-text {
+        font-size: 36px;
+    }
+    .our-best-works .special-button {
+        margin-top: 30px;
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+    .our-best-works .portfolio {
+        width: 65%;
+    }
+    .our-best-works .portfolio__item--audi {
+        left: -15px;
+        top: -15px;
+    }
+    .our-best-works .portfolio__item--your-project {
+        left: 15px;
+        top: 15px;
+    }
+    .our-best-works .project-name {
+        padding: 10px;
+        font-size: 22px;
+    }
+    .our-best-works .form {
+        width: 35%;
+    }
+    .our-best-works.opened .front-layer {
+        transform: rotateY(25deg) scaleX(0.65);
+    }
+    .our-clients .client img {
+        width: 80%;
+        height: 50px;
+        object-fit: contain;
+    }
+    .our-clients .text-container span {
+        font-size: 24px;
+    }
+    .our-clients.about-company {
+        min-height: 768px;
+    }
+    .our-clients.about-company .open-form {
+        font-size: 22px;
+    }
+    .our-clients.about-company .back-layer {
+        padding-right: 4%;
+    }
+    .our-clients.about-company .form {
+        width: 35%;
+    }
+    .our-clients.about-company.opened .front-layer {
+        transform: rotateY(25deg) scaleX(0.65);
+    }
+    .home-blog .big-background-letter {
+        display: none;
+    }
+    .home-blog .container {
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .home-blog .blue-line {
+        height: 200px;
+    }
+    .home-blog .text-block {
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        width: 55%;
+    }
+    .home-blog .image-block {
+        display: none;
+    }
+    .services {
+        min-height: 768px;
+    }
+    .services .content-title-text {
+        transition: color 0.3s;
+    }
+    .services .content-title:hover .content-title-text {
+        color: #425cbb;
+    }
+    .services .content-title:hover .content-title-text:before {
+        width: 0;
+    }
+}
+@media (max-width: 768px) {
+    .clock .hours-container,
+    .clock .seconds-container {
+        zoom: 0.8;
+    }
+    .clock .minutes-container {
+        zoom: 0.75;
+    }
+    .clock .watch {
+        background-size: 32%;
+    }
+    .clock .text-block {
+        width: 70%;
+    }
+    .company-description .container {
+        height: 70%;
+    }
+    .audi .info {
+        margin-top: 50px;
+        margin-right: 5%;
+        width: 40%;
+    }
+    .audi .project-name {
+        left: -60px;
+        font-size: 100px;
+    }
+    .audi .about-work {
+        width: 100%;
+    }
+    .audi .special-button {
+        margin: 35px auto;
+    }
+    .audi .special-button-text {
+        color: #444;
+        transition: color 0.3s;
+    }
+    .audi .special-button:hover .special-button-text {
+        color: #fff;
+    }
+    .our-clients .container,
+    .our-clients .lines {
+        width: 76%;
+    }
+    .our-clients .text-container span {
+        font-size: 24px;
+    }
+    .our-clients .vertical-text {
+        left: 20px;
+        width: 350px;
+        line-height: 1.2;
+    }
+    .our-clients.about-company {
+        min-height: 1024px;
+    }
+    .our-clients.about-company .open-form {
+        font-size: 16px;
+        line-height: 1;
+    }
+    .home-contacts {
+        display: block;
+    }
+    .home-contacts .home-contacts-title {
+        margin-bottom: 30px;
+        width: 90%;
+    }
+    .home-contacts .form {
+        margin-left: auto;
+        width: 60%;
+    }
+}
+@media (max-width: 667px) {
+    .clock .watch {
+        margin: 0 auto;
+        background-size: 25%;
+    }
+    .clock .hours-container {
+        zoom: 0.4;
+    }
+    .clock .minutes-container {
+        zoom: 0.35;
+    }
+    .clock .seconds-container {
+        zoom: 0.4;
+    }
+    .clock .text-block {
+        top: 30%;
+        left: 10%;
+    }
+    .clock .text-block-header {
+        font-size: 40px;
+    }
+    .clock .text-slogan {
+        width: 50%;
+        font-size: 18px;
+    }
+    .company-description .container {
+        height: 100%;
+    }
+    .company-description .texts {
+        width: 100%;
+    }
+    .company-description .phrase {
+        font-size: 30px;
+    }
+    .company-description .phrase-translation {
+        font-size: 22px;
+    }
+    .company-description .phrase-description {
+        font-size: 16px;
+    }
+    .company-description .crossed-button span {
+        font-size: 15px;
+    }
+    .company-description .images {
+        display: none;
+    }
+    .company-description .rotated-text {
+        display: none;
+    }
+    .audi {
+        padding: 10% 30px 0;
+        font-family: "Raleway Bold";
+        font-size: 24px;
+    }
+    .audi .mirror,
+    .audi .portfolio-client,
+    .audi .portfolio-right-panel {
+        display: none;
+    }
+    .audi .audi-block-image {
+        min-height: initial;
+        filter: blur(5px);
+    }
+    .audi .info {
+        margin-top: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .audi .project-name {
+        left: initial;
+        font-size: 60px;
+        text-align: center;
+    }
+    .audi .about-work {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .audi .about-work p {
+        font-size: 22px;
+    }
+    .audi .special-button span {
+        color: #fff;
+    }
+    .our-best-works .back-layer,
+    .our-best-works .front-layer {
+        min-height: initial;
+    }
+    .our-best-works .back-layer {
+        padding-right: 0;
+    }
+    .our-best-works .container {
+        display: block;
+        padding-top: 40px;
+        width: 90%;
+    }
+    .our-best-works .lines {
+        display: none;
+    }
+    .our-best-works .languages {
+        bottom: initial;
+        top: 200px;
+        left: 10px;
+    }
+    .our-best-works .sticker {
+        margin-bottom: 10px;
+    }
+    .our-best-works .info {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+    }
+    .our-best-works .new-title {
+        margin-top: 0;
+    }
+    .our-best-works .new-title-text {
+        font-size: 28px;
+    }
+    .our-best-works .special-button {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    .our-best-works .portfolio {
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        margin-top: 40px;
+        width: 100%;
+        height: 100%;
+    }
+    .our-best-works .portfolio__item {
+        margin-bottom: 20px;
+        width: 23%;
+        height: 100px;
+    }
+    .our-best-works .portfolio__item--audi {
+        left: initial;
+        top: initial;
+    }
+    .our-best-works .portfolio__item--audi .project-name {
+        top: 0;
+        left: initial;
+    }
+    .our-best-works .portfolio__item--dela .project-name {
+        top: 0;
+        right: initial;
+    }
+    .our-best-works .portfolio__item--euro-club .project-name {
+        bottom: initial;
+        top: 0;
+        left: initial;
+    }
+    .our-best-works .portfolio__item--your-project {
+        top: 0;
+        left: initial;
+    }
+    .our-best-works .portfolio__item--your-project .project-name {
+        bottom: initial;
+        top: 0;
+        right: initial;
+    }
+    .our-best-works .project-name {
+        display: none;
+    }
+    .our-best-works .form {
+        margin: 0 auto;
+        width: 70%;
+    }
+    .our-best-works.opened .front-layer {
+        transform: rotateY(120deg) scaleX(1);
+    }
+    .our-clients .languages {
+        right: -60px;
+    }
+    .our-clients .container,
+    .our-clients .lines {
+        width: 80%;
+    }
+    .our-clients .container {
+        top: 30px;
+    }
+    .our-clients .new-title {
+        margin-top: 10px;
+    }
+    .our-clients .text-container {
+        width: 90%;
+    }
+    .our-clients .text-container:before {
+        display: none;
+    }
+    .our-clients .new-title-text {
+        line-height: 1.2;
+        white-space: initial;
+    }
+    .our-clients .clients {
+        margin-top: 20px;
+    }
+    .our-clients .client {
+        margin-top: 0;
+    }
+    .our-clients .client img {
+        width: 70%;
+        height: 45px;
+    }
+    .our-clients .vertical-text {
+        display: none;
+    }
+    .our-clients.about-company {
+        min-height: 568px;
+    }
+    .our-clients.about-company .back-layer {
+        padding-right: 0;
+    }
+    .our-clients.about-company .form {
+        margin: 0 auto;
+        width: 70%;
+    }
+    .our-clients.about-company.opened .front-layer {
+        transform: rotateY(120deg) scaleX(1);
+    }
+    .home-blog .languages {
+        top: 200px;
+    }
+    .home-blog .container {
+        padding: 25vh 0 0;
+        width: 90%;
+    }
+    .home-blog .blue-line {
+        right: 5%;
+        width: 10%;
+        height: 150px;
+    }
+    .home-blog .text-block {
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        width: 100%;
+        min-width: initial;
+    }
+    .home-blog .new-title {
+        margin-top: 10px;
+        width: 280px;
+    }
+    .home-blog .text-container:before {
+        height: 15px;
+    }
+    .home-blog .new-title-text {
+        font-size: 22px;
+    }
+    .home-blog .text {
+        margin-top: 15px;
+        padding-left: 5%;
+        font-size: 14px;
+    }
+    .home-blog .special-buttons {
+        margin-top: 15px;
+        padding-left: 5%;
+    }
+    .home-blog .special-button {
+        margin-right: 20px;
+    }
+    .home-blog .image-block {
+        display: none;
+    }
+    .home-contacts {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0;
+    }
+    .home-contacts .home-contacts-title {
+        display: none;
+    }
+    .home-contacts .form {
+        display: none;
+    }
+    .home-contacts .home-contacts-info {
+        position: relative;
+        left: initial;
+        bottom: initial;
+    }
+    .home-contacts .home-contacts-info li {
+        margin-bottom: 35px;
+        font-size: 18px;
+    }
+    .home-contacts .home-contacts-info .type {
+        margin-bottom: 15px;
+    }
+    .services {
+        display: block;
+        height: initial;
+        min-height: initial;
+    }
+    .services .social {
+        display: none;
+    }
+    .services .lines {
+        display: none;
+    }
+    .services .container {
+        position: relative;
+        margin: 0 auto;
+        padding: 100px 0;
+        width: 60%;
+        height: 100%;
+    }
+    .services .container:after,
+    .services .container:before {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -1px;
+        width: 1px;
+        height: 100%;
+        background: #999;
+        content: "";
+        opacity: 0.5;
+    }
+    .services .container:after {
+        left: 100%;
+    }
+    .services .name:before {
+        left: -30px;
+        width: 25px;
+    }
+    .services .services-list {
+        display: block;
+        margin-top: 40px;
+    }
+    .services .item {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .services .content-title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .services.page {
+        height: initial;
+        min-height: 100vh;
+        overflow: auto;
+    }
+    .services.page .line {
+        animation: none;
+    }
+    .services.page .container {
+        height: initial;
+        min-height: 100vh;
+    }
+    .services.page .container:after,
+    .services.page .container:before {
+        animation: Down 0.6s 0.9s both;
+    }
+    .services.page .container:after {
+        animation-delay: 1.5s;
+    }
+    .services.page .name:before {
+        animation-name: titleNameShapeMobile;
+    }
+    .services.page .item:nth-child(1) .index span,
+    .services.page .item:nth-child(2) .index span,
+    .services.page .item:nth-child(3) .index span,
+    .services.page .item:nth-child(4) .index span,
+    .services.page .item:nth-child(5) .index span,
+    .services.page .item:nth-child(6) .index span {
+        animation-delay: 0.9s;
+    }
+    .services.page .item:nth-child(1) .content-title-text,
+    .services.page .item:nth-child(2) .content-title-text,
+    .services.page .item:nth-child(3) .content-title-text,
+    .services.page .item:nth-child(4) .content-title-text,
+    .services.page .item:nth-child(5) .content-title-text,
+    .services.page .item:nth-child(6) .content-title-text {
+        animation-delay: 0.9s;
+    }
+    .services.page .item:nth-child(1) .content-list a,
+    .services.page .item:nth-child(2) .content-list a,
+    .services.page .item:nth-child(3) .content-list a,
+    .services.page .item:nth-child(4) .content-list a,
+    .services.page .item:nth-child(5) .content-list a,
+    .services.page .item:nth-child(6) .content-list a {
+        animation-delay: 0.9s;
+    }
+    .services.page .item:nth-child(1) .content-text,
+    .services.page .item:nth-child(2) .content-text,
+    .services.page .item:nth-child(3) .content-text,
+    .services.page .item:nth-child(4) .content-text,
+    .services.page .item:nth-child(5) .content-text,
+    .services.page .item:nth-child(6) .content-text {
+        animation-delay: 0.9s;
+    }
+    .services.page .content-list a {
+        margin-bottom: 10px;
+        line-height: 1.2;
+    }
+    .services.current,
+    .services.current-back,
+    .services.previous,
+    .services.previous-back {
+        width: 100vw;
+        height: 100vh;
+    }
+    .services.current .content-list,
+    .services.current .content-text,
+    .services.current-back .content-list,
+    .services.current-back .content-text,
+    .services.previous .content-list,
+    .services.previous .content-text,
+    .services.previous-back .content-list,
+    .services.previous-back .content-text {
+        display: none;
+    }
+}
+@media (max-width: 414px) {
+    .clock .watch {
+        margin: 0 auto;
+        background-size: 35%;
+    }
+    .clock .text-block {
+        width: 90%;
+        top: 20%;
+        left: 5%;
+    }
+    .clock .text-block-header {
+        font-size: 30px;
+    }
+    .clock .text-block-slogan {
+        font-size: 18px;
+    }
+    .audi {
+        padding-top: 30%;
+    }
+    .audi .project-name {
+        font-size: 80px;
+    }
+    .our-best-works .container {
+        padding-top: 15vh;
+        width: 94%;
+    }
+    .our-best-works .info {
+        width: 80%;
+    }
+    .our-best-works .portfolio {
+        margin-top: 30px;
+        height: initial;
+    }
+    .our-best-works .portfolio__item {
+        width: 45%;
+    }
+    .our-clients .languages {
+        display: none;
+    }
+    .our-clients .container,
+    .our-clients .lines {
+        width: 94%;
+    }
+    .our-clients .client {
+        margin-top: 10px;
+    }
+    .our-clients .client img {
+        width: 80%;
+        height: 104px;
+    }
+    .services .container {
+        width: 76%;
+    }
+}

@@ -1,0 +1,2096 @@
+* {
+    box-sizing: border-box;
+  }
+    
+    @font-face{
+		font-family:'Harmonia Bold';
+		src:url(fonts/Harmonia-Bold.ttf) format('truetype');
+	}
+		@font-face{
+		font-family:'Harmonia Regular';
+		src:url(fonts/Harmonia-Regular.ttf) format('truetype');
+	}
+		@font-face{
+		font-family:'Raleway Bold';
+		src:url(fonts/Raleway-Bold.ttf) format('truetype');
+	}
+		@font-face{
+		font-family:'Raleway ExtraBold';
+		src:url(fonts/Raleway-ExtraBold.ttf) format('truetype');
+	}
+		@font-face{
+		font-family:'Raleway Light';
+		src:url(fonts/Raleway-Light.ttf) format('truetype');
+	}
+		@font-face{
+		font-family:'Raleway Medium';
+		src:url(fonts/Raleway-Medium.ttf) format('truetype');
+	}
+		@font-face{
+		font-family:'Raleway Regular';
+		src:url(fonts/Raleway-Regular.ttf) format('truetype');
+	}
+		@font-face{
+		font-family:'Raleway SemiBold';
+		src:url(fonts/Raleway-SemiBold.ttf) format('truetype');
+	}
+		@font-face{
+		font-family:'Raleway Thin';
+		src:url(fonts/Raleway-Thin.ttf) format('truetype');
+	}
+		@font-face{
+		font-family:'Roboto Black';
+		src:url(fonts/Roboto-Black.ttf) format('truetype');
+	}
+		@font-face{
+		font-family:'Roboto Bold';
+		src:url(fonts/Roboto-Bold.ttf) format('truetype');
+	}
+		@font-face{
+		font-family:'Roboto Light';
+		src:url(fonts/Roboto-Light.ttf) format('truetype');
+	}
+		@font-face{
+		font-family:'Roboto Medium';
+		src:url(fonts/Roboto-Medium.ttf) format('truetype');
+	}
+		@font-face{
+		font-family:'Roboto Regular';
+		src:url(fonts/Roboto-Regular.ttf) format('truetype');
+	}
+		@font-face{
+		font-family:'Roboto Thin';
+		src:url(fonts/Roboto-Thin.ttf) format('truetype');
+	}
+		@font-face{
+		font-family:'Audi Bold';
+		src:url(fonts/Audi-Bold.woff) format('');
+	}
+		@font-face{
+		font-family:'Audi Regular';
+		src:url(fonts/Audi-Regular.woff) format('');
+	}
+	
+	
+	
+		@keyframes start{0%{opacity:0}100%{opacity:1}}.start{animation-name:start}body{opacity:0;animation:start 1s .75s forwards;-webkit-tap-highlight-color:transparent;-webkit-font-smoothing:antialiased}
+
+	/*css*/
+	
+.transition--fade.navigations {
+    width: 80%;
+    float: right;
+    position: relative;
+}
+
+
+.nav-module.menu-module.left.hidden-sm.hidden-xs{width:100%;position:absolute;z-index:999;}
+
+
+
+.menu1 li{float:left;padding:0px 5px;}
+.menu1 li a {
+    color: #fff;
+    padding: 0px 16px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+}
+
+.multi-column{display:none;}
+.menu1 li a:hover .multi-column{display:block !important;}
+.menu {
+    width: 95px;
+    height: 95px;
+    background: #000;
+}
+.menu__item--open-close {
+    padding-top: 13px;
+    width: 95px;
+    height: 95px;
+}
+   .logo1 img{    width: 140px;}
+   .logo1{ position: fixed;
+    z-index: 9;
+    left: 50px;
+    top: 20px;}
+
+
+	/*css end*/
+	
+	.company-description .phrase-description {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.625em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 400;}
+	.logo{
+    width: 185px;
+    height: auto;
+    left:0px;
+    top: 25px;
+}
+	
+	.company-description .phrase-translation {
+    margin-top: 20px;
+    font-size: 23px;
+    line-height: 28px;
+}
+	.company-description .phrase {
+    font-size: 46px;
+}
+	.logo img{
+    width:135px;
+    height: auto;
+}
+	
+	.company-description .phrase-translation {
+    margin-top: 20px;
+    font-size: 23px;
+    line-height: 27px;
+}
+.company-description .crossed-button span {
+    font-size: 14px;
+}
+.services.screen-block.current{    background: #425cbb;}	
+	
+	.clock .text-block {
+    top: 292px;
+    left: 9vh;
+    width: 100%;
+}
+.clock.first-slide, .clock.current-back{background:#000;}
+
+
+
+
+.clock .text-block-slogan {
+color: #032cf4;}
+
+
+
+.clock .text-block-header {
+    font-size: 35px;
+}
+
+
+.five1{width: 500px;
+    position: absolute;
+    z-index: 999;
+    top: -170px}
+
+.copyright {
+    bottom: 68vh;
+}
+
+
+.clock {
+background: #000000;}
+
+
+
+
+
+
+.social {
+    bottom: 77px;
+    left: 80px;
+}
+
+
+.social .facebook, .social .instagram{color:#00f3ff; font-size: x-large;}
+
+
+
+.clock .text-block-slogan {
+    color: #fff;
+    font-weight: 100;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+.services .line {
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #a6b9ff61;
+}
+.services .index span {
+    padding: 3px 5px;
+    color: #87a0fb5c;font-size:50px;
+}
+.iconse{   width:15px;
+    height: 1px;
+    border: 1px solid #ccc;
+    float: left;margin-bottom: 5px;
+    font-size: 14px;color:#fff;
+    padding: 0px 5px 0px 0px;    transition: font-size .3s,color .3s;
+    margin-right: 10px;}
+
+.ulindwe li{    float: left;
+    width: 100%;
+    line-height: 5px;
+    margin-bottom: 17px;
+    font-size: 15px;
+    color: #fff;}
+	
+	.services .item {
+    margin-top: 40px;
+}
+	
+	.our-clients.current, .our-clients.current-back, .our-clients.previous, .our-clients.previous-back {
+    background: #000;
+}
+	
+	.services.screen-block.current-back{background:#425cbb}
+	
+	
+	.services.current, .services.current-back, .services.page, .services.previous, .services.previous-back {
+    animation: fadeIn .6s 0s both;
+    background: #425cbb;
+}
+	
+	
+	
+	
+	
+	.our-best-works .project-name {
+    padding: 10px 20px;
+    font-size: 26px;
+}
+	
+	
+	
+	
+	.home-contacts .home-contacts-info {    width: 660px;
+    top: 50%;}
+	.home-contacts .home-contacts-info li {
+    margin-bottom: 30px;
+    width: 50%;
+    float: left;
+}
+	
+	.home-contacts .home-contacts-info .type {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.home-contacts .home-contacts-info a {
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.our-clients img {
+    padding: 11px 2px;
+}
+
+
+
+
+
+
+.animated-button {
+    display: inline-block;
+    position: relative;
+    padding: 0 34px;
+color: #000;}
+.home-contacts .home-contacts-title span {
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.home-blog .text{font-size: 15px;
+    line-height: 1.625em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 400;}
+
+
+	.project-description{    font-size: 15px;
+    line-height: 1.625em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 400;}
+
+	.our-best-works .portfolio__item--your-project .project-description{   font-family: "Roboto Regular";
+    font-size: 14px;
+    line-height: 1.4;
+    transform: translateY(20%);}
+
+.menu__item {
+    width: 100px;
+    height: 100px;
+}
+.home-contacts .form {
+background-color: #000000;}
+
+.home-contacts .home-contacts-title {
+    background-color: #000000;
+}
+
+
+
+
+
+
+
+@media(max-width:1200px) and (min-width:992px){
+	.five2 img{width:570px !important	}
+
+	.copyright {
+    bottom: 540px;
+}
+	
+	
+	.social {
+    bottom: 228px;}
+	
+	
+	.company-description .big-background-letter {
+    top: 20px;}
+	
+	.company-description .texts {
+    position: relative;
+    z-index: 4;
+    width: 50%;
+}
+
+.company-description .images {
+width: 50%;}
+
+.company-description .phrase {
+    font-size: 40px;
+}
+
+.company-description .texts {
+    margin-top: -6%;
+}
+.sticker {
+    position: relative;
+    font-family: "Raleway Bold";
+    font-size: 14px;
+    margin-top: -15%;
+}
+.services .content-list {
+    margin-top: 15px;
+    width: 100%;
+    float: left;
+}
+
+.ulindwe li {
+    float: left;
+    width: 100%;
+    line-height: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #fff;
+}
+.home-blog .container {
+    width: 90%;
+}
+.home-blog .image-block {
+    display: block;
+}
+.home-contacts {
+    padding: 80px 0 40px;
+}
+.home-contacts .big-background-letter {
+    top: -15vh;
+    right: 50vh;
+    z-index: 1;
+    font-size: 90vh;
+}
+
+.home-contacts .home-contacts-info {
+    width: 660px;
+    top: 40%;
+}
+
+
+.home-contacts .form {
+    right: 1%;
+    padding: 40px 2% 190px;
+    width: 36%;
+}
+
+
+
+.menu.opened .menu__item .border-bottom {
+    width: 100vw;
+    margin-top: 0px;
+}
+
+
+	
+	}
+
+@media(max-width:991px) and (min-width:768px){
+	.five2 img{    width: 430px !important;   margin-top:222px;	}
+
+    .clock
+{
+    overflow: scroll !important;
+    height:auto !important;
+    min-height:auto !important;
+}
+
+
+
+.wrapper
+{
+    overflow:scroll !important;
+}
+
+
+
+	.copyright {
+    bottom: 390px;
+}
+	.services.screen-block.current-back .copyright {
+    bottom: 490px;
+}
+	.logo.dark, .menu.dark{display:none;}
+	.social {
+    bottom:70px;}
+	.company-description .container {
+    height: 100%;width:100%;
+}
+	
+	.company-description .big-background-letter {
+    top: 20px;}
+	
+	.company-description .texts {
+    position: relative;
+    z-index: 4;
+    width: 50%;
+}
+
+.company-description .images {
+width: 50%;}
+
+.company-description .phrase {
+    font-size: 25px;
+}
+.company-description .phrase-translation {
+    margin-top: 20px;
+font-size: 18px;}
+.company-description .phrase-description {
+    margin-top: 20px;
+font-size: 14px;}
+.services .item {
+    position: relative;
+    margin-top: 0px !important;
+    width: 100%;
+}
+.company-description .texts {
+    margin-top: -45%;
+    margin-left: 65px;
+}
+.sticker {
+      position: relative;
+    font-family: "Raleway Bold";
+    font-size: 14px;
+    margin-top: -30%;
+}
+.animated-button {
+    display: inline-block;
+    position: relative;
+padding: 0 15px;}
+
+.logo {
+    position: relative !important;
+    z-index: 2;
+}
+.services .content-list {
+    margin-top: 15px;
+    width: 100%;
+    float: left;
+}
+
+.ulindwe li {
+   float: left;
+    width: 100%;
+    line-height: 13px;
+    margin-bottom: 9px;
+    font-size: 15px;
+    color: #fff;
+}
+.home-blog .container {
+    width: 90%;
+}
+.home-blog .image-block {
+    display: block;
+}
+.home-contacts {
+    padding: 80px 0 40px;
+}
+.home-contacts .big-background-letter {
+    top: -15vh;
+    right: 50vh;
+    z-index: 1;
+    font-size: 90vh;
+}
+.services .big-background-letter {
+    position: fixed;
+    top: 10vh;
+    right: -4vh;
+    font-size: 70vh;
+}
+.our-best-works .container {
+    width: 90%;
+}
+.home-contacts .home-contacts-info {
+      width: 400px;
+    top:25%;
+}
+.form label {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 13px;
+    padding: 0 10px;
+    width: 100%;
+    border-bottom: 1px solid #999;
+    text-transform: capitalize;
+}
+.screen-block.current, .screen-block.current-back {
+z-index: 1;}
+.form .form-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.our-best-works .new-title-text {
+    font-size: 25px;
+}
+
+
+.services.screen-block.current, .our-best-works.current, .our-clients.current, .home-blog.current {
+    z-index: 9;
+}
+.our-clients.current, .our-clients.current-back, .our-clients.previous, .our-clients.previous-back, .our-best-works.current, .our-best-works.current-back, .our-best-works.previous, .our-best-works.previous-back, .screen-block.current, .screen-block.current-back, .company-description.current, .company-description.current-back, .company-description.previous, .company-description.previous-back{    z-index: 9;}
+
+
+.our-clients.screen-block.current .sticker{    margin-top: -70%;}
+.home-blog.screen-block.current .sticker {
+    margin-top: -98%;
+}
+
+.home-contacts.screen-block.current{    padding: 0px 0 40px;}
+
+
+
+.home-contacts .form {
+    right: 1%;
+    padding: 40px 2% 190px;
+    width: 36%;
+}
+
+
+
+.menu.opened .menu__item .border-bottom {
+    width: 100vw;
+    margin-top: 0px;
+}
+.clock.first-slide, .clock.current-back {
+    background: #000;
+    min-height: 550px;    z-index: 1;
+    height: 550px;
+}
+.services .index span {
+    font-size: 20px;
+}
+
+
+.home-blog .new-title-text {
+    font-size: 25px;
+}
+
+
+.home-blog .container {
+padding: 7vh 0;}
+
+
+
+
+	
+	}
+
+@media(max-width:767px) and (min-width:580px){
+	.five2 img{       width: 270px !important;
+    margin-top: 185px;	}
+
+	.copyright {
+    bottom: 390px;
+}
+	.services.screen-block.current-back .copyright {
+    bottom: 490px;
+}
+	.logo.dark, .menu.dark{display:none;}
+	.social {
+    bottom:130px;}
+	.company-description .container {
+    height: 100%;width:100%;
+}
+	
+	.company-description .big-background-letter {
+    top: 20px;}
+	
+	.company-description .texts {
+    position: relative;
+    z-index: 4;
+    width: 50%;
+}
+
+.company-description .images {
+width: 50%;}
+
+.company-description .phrase {
+    font-size: 25px;
+}
+.company-description .phrase-translation {
+    margin-top: 20px;
+font-size: 18px;}
+.company-description .phrase-description {
+    margin-top: 20px;
+font-size: 14px;}
+.services .item {
+    position: relative;
+    margin-top: 0px !important;
+    width: 100%;
+}
+.company-description .texts {
+    margin-top: -45%;
+    margin-left: 65px;
+}
+.sticker {
+      position: relative;
+    font-family: "Raleway Bold";
+    font-size: 14px;
+    margin-top: -30%;
+}
+.animated-button {
+    display: inline-block;
+    position: relative;
+padding: 0 15px;}
+
+.logo {
+    position: relative !important;
+    z-index: 2;
+}
+.services .content-list {
+    margin-top: 15px;
+    width: 100%;
+    float: left;
+}
+
+.ulindwe li {
+    float: left;
+    width: 50%;
+    line-height: 13px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 15px;
+}
+.home-blog .container {
+    width: 90%;
+}
+.home-blog .image-block {
+    display: block;
+}
+.home-contacts {
+    padding: 80px 0 40px;
+}
+.home-contacts .big-background-letter {
+    top: -15vh;
+    right: 50vh;
+    z-index: 1;
+    font-size: 90vh;
+}
+.services .big-background-letter {
+    position: fixed;
+    top: 10vh;
+    right: -4vh;
+    font-size: 70vh;
+}
+.our-best-works .container {
+    width: 90%;
+}
+.home-contacts .home-contacts-info {
+        width: 300px;
+    top: 0%;
+}
+.form label {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 13px;
+    padding: 0 10px;
+    width: 100%;
+    border-bottom: 1px solid #999;
+    text-transform: capitalize;
+}
+.screen-block.current, .screen-block.current-back {
+z-index: 1;}
+.form .form-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.our-best-works .new-title-text {
+    font-size: 20px;
+}
+
+
+.services.screen-block.current, .our-best-works.current, .our-clients.current, .home-blog.current {
+    z-index: 9;
+}
+.our-clients.current, .our-clients.current-back, .our-clients.previous, .our-clients.previous-back, .our-best-works.current, .our-best-works.current-back, .our-best-works.previous, .our-best-works.previous-back, .screen-block.current, .screen-block.current-back, .company-description.current, .company-description.current-back, .company-description.previous, .company-description.previous-back{    z-index: 9;}
+
+
+.our-clients.screen-block.current .sticker{    margin-top: -30%;}
+.home-blog.screen-block.current .sticker {
+    margin-top: -8%;
+}
+
+.home-contacts.screen-block.current{    padding: 0px 0 40px;}
+
+
+
+.home-contacts .form {
+padding: 50px 2% 120px !important;
+    width: 45%;
+    position: absolute;
+}
+
+
+
+.menu.opened .menu__item .border-bottom {
+    width: 100vw;
+    margin-top: 0px;
+}
+.clock.first-slide, .clock.current-back {
+    background: #000;
+    min-height:100vh;    z-index: 1;
+    height: 100vh;
+}
+.services .index span {
+    font-size: 20px;
+}
+
+
+.home-blog .new-title-text {
+    font-size: 25px;
+}
+
+
+.home-blog .container {
+padding: 7vh 0;}
+.clock .text-block-header {
+    font-size: 20px;
+}
+.five1 {
+    top: -185px;
+}
+.screen-block {
+    min-height: 100vh;
+}
+.company-description .texts {
+    margin-top: 0%;
+    margin-left: 8%;
+    width: 100%;
+    margin-right: 0%;
+}
+.company-description .images {
+    display: block;
+}
+	.company-description .image-container:first-of-type {
+    height: 100%;
+}
+.home-contacts .home-contacts-info {
+    padding-top: 100px;
+}
+
+.company-description .texts {
+margin-top: 25%;}
+
+
+.services .container {
+position: relative;
+    margin: 0 auto;
+    padding: 55px 30px;
+    width: 100%;}
+.services.screen-block.current .sticker{    margin-top: 0%;}
+
+.services .content-list {
+    margin-top: 0px;
+    width: 100%;
+    float: left;
+    display: block !important;
+}
+.services.current .item:nth-child(1) .content-title-text, .services.current .item:nth-child(4) .content-title-text, .services.current-back .item:nth-child(1) .content-title-text, .services.current-back .item:nth-child(4) .content-title-text, .services.page .item:nth-child(1) .content-title-text, .services.page .item:nth-child(4) .content-title-text, .services.previous .item:nth-child(1) .content-title-text, .services.previous .item:nth-child(4) .content-title-text, .services.previous-back .item:nth-child(1) .content-title-text, .services.previous-back .item:nth-child(4) .content-title-text {
+    animation-delay: .9s;
+    font-size: 15px;
+}
+
+.services .content-title-text {
+    transition: color .3s;
+    font-size: 14px;
+}
+
+.services.screen-block.current-back .sticker {
+    margin-top: 0%;
+}
+
+.our-best-works .info {
+width:80%;}
+
+
+.our-best-works .special-button {
+    margin-top: 0px;
+    font-size: 25px;
+    height: 40px;
+    line-height: 9px;
+}
+.our-best-works .portfolio {
+margin-top: 0px;}
+.our-best-works .portfolio__item {
+    margin-bottom: 20px;
+    width: 45%;
+    height: 100px;
+}
+.screen-block.current, .screen-block.current-back .sticker {
+    margin-top: 0%;
+}
+.our-best-works .sticker {
+    margin-bottom: 10px;
+    margin-top: 0%;
+}
+.our-clients .text-container span {
+    font-size: 20px;
+}
+
+.home-blog.screen-block.current .sticker {
+    margin-top: 15%;
+}
+
+.home-blog .image-block {
+    display: none !important;
+}
+
+
+.home-contacts .home-contacts-title {
+    display: block;
+}
+.home-contacts .home-contacts-title p {
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+.home-contacts .home-contacts-title span {
+    margin-top: 13px;
+    font-size: 15px;
+}
+
+.home-contacts .home-contacts-info li {
+    margin-bottom: 0px;
+    width: 100%;
+    float: left;
+    margin-top: 18px;
+}
+.home-contacts .form {
+    float: right;
+    right: 1% !important;
+        padding-bottom: 104px !important;
+    display: block;
+}
+.home-contacts .home-contacts-info {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    z-index: 999;
+    padding-top: 22%;
+}
+.screen-block.current, .screen-block.current-back .sticker {
+    z-index:1;
+}
+.logo {
+    position: relative !important;
+    z-index: 1;
+}
+.clock.screen-block.current.first-slide{    z-index: 0;}
+
+
+
+.our-clients .client {
+    margin-top: 50px;
+    width: 33%;
+}
+.paset4{       right: 138px !important;
+    top: 69px !important;}
+.paset1{      right: 69px !IMPORTANT;
+    top: 138px !important;}
+.paset2{    right: 138px !important;
+    top: 138px !important;}
+.paset3{    right: 0px !IMPORTANT;
+    top: 207px !important;}
+.logo1 {
+    left: 10px;
+    top: 10px;
+}
+.menu__item--open-close {
+    padding-top: 13px;
+    width: 70px;
+    height: 60px;
+}
+.menu {
+    width: 70px;
+    height: 60px;
+    background: #000;
+}
+.menu__item--open-close {
+    padding-top: 13px;
+    width: 70px;
+    height: 60px;
+}
+.logo1 {
+    position: relative !important;
+    z-index: 9;
+    left: 15px;    z-index: 1;
+    top: 15px;
+}
+.menu__background {
+    width: 70px !important;
+height: 60px !important;}
+.menu__item {
+    width: 70px !important;
+    height: 70px !important;
+}
+.our-clients.screen-block{
+    padding-top: 18%;
+}
+.our-clients.screen-block.current-back{    padding-top: 10%;}
+.company-description .texts {
+    margin-top: 0%;
+}
+.clock.first-slide, .clock.current-back {
+z-index: 0;}
+
+
+.menu__item .name, .menu__item .serial-number {
+    display: block;
+    font-size: 12px !important;
+}
+
+.menu__item .text-block {
+    padding-top: 11px;
+}
+.menu__item .hamburger {
+    z-index: 9;
+}
+.menu__item--open-close {
+    background: #000;
+}
+.screen-block.current, .screen-block.current-back .sticker { z-index:0;}
+.home-blog.screen-block.current{z-index:1;}
+.our-best-works.screen-block.current{z-index:1;}
+.our-clients.screen-block.current{z-index:1;}
+.home-contacts.screen-block.current{z-index:1;}
+.logo { position: relative !important; z-index: 1;}
+.menu__item .hamburger {
+    height: 20px;
+}
+.home-contacts .form{display:none !important}
+.menu__item .name, .menu__item .symbol {
+    font-size: 25px;
+}
+	}
+	
+	
+@media(max-width:579px) and (min-width:280px){
+	.menu__item {
+    width: 70px !important;
+    height: 70px !important;
+}
+.clock.first-slide, .clock.current-back
+{
+    height:80vh !important;
+    min-height:80vh !important;
+}
+.prtnerssd
+{
+    /* margin:15px auto !important; */
+}
+.clock .text-block-header
+{
+    /* text-align:center !important; */
+}
+.company-description .crossed-button
+{
+    float:left !important;
+}
+.services.screen-block.current-back
+{
+    background-color:#425cbb !important;
+}
+.home-blog .image-container img
+{
+    object-fit:contain !important;
+}
+.line--1
+{
+    display:none !important;
+}
+.home-blog .image-container:before
+{
+    display:none !important;
+}
+
+.line--2
+{
+    display:none !important;
+}
+
+.line--3
+{
+    display:none !important;
+}
+
+
+.line--4
+{
+    display:none !important;
+}
+
+strong
+{
+  color: #000 !important;
+  font-weight: normal;
+
+}
+
+.fa-share-square
+{
+  margin-right:17px !important;
+}
+
+.home-contacts .home-contacts-info li:last-of-type
+{
+    margin-bottom:40px !important;
+}
+
+.company-description.screen-block
+{
+    height:840px !important;
+}
+
+.home-blog .text
+{
+    padding-left:0 !important;
+}
+
+.lefftsdd
+{
+    right:69px !important;
+}
+.menu__item .name, .menu__item .symbol {
+    font-size: 25px;
+}
+	.home-contacts .form{display:none !important}
+
+	.menu__item .hamburger {
+    z-index: 9;
+}
+.menu__item--open-close {
+    background: #000;
+}
+	.menu__item .text-block {
+    padding-top: 11px;
+}
+	.paset4{       right: 138px !important;
+    top: 69px !important;}
+.paset1{      right: 69px !IMPORTANT;
+    top: 138px !important;}
+.paset2{    right: 138px !important;
+    top: 138px !important;}
+.paset3{    right: 0px;
+    top: 207px !important;}
+	.clock.screen-block.current.first-slide{    z-index: 0;}
+
+	.five2 img{       width: 270px !important;
+    margin-top: 185px;	}
+
+	.copyright {
+    bottom: 390px;
+}
+	.services.screen-block.current-back .copyright {
+    bottom: 490px;
+}
+	.logo.dark, .menu.dark{display:none;}
+	.social {    bottom: 30px;
+    left: 0px;}
+	.company-description .container {
+    height: 100%;width:100%;
+}
+	
+	.company-description .big-background-letter {
+    top: 20px;}
+	
+	.company-description .texts {
+    position: relative;
+    z-index: 4;
+    width: 50%;
+}
+
+.company-description .images {
+width: 50%;}
+
+.company-description .phrase {
+    font-size: 20px;
+}
+.company-description .phrase-translation {
+    margin-top: 7px;
+font-size: 16px;}
+.company-description .phrase-description {
+    margin-top: 7px;
+font-size: 13px;}
+.services .item {
+    position: relative;
+    margin-top: 0px !important;
+    width: 100%;
+}
+.company-description .texts {
+    margin-top: -45%;
+    margin-left: 65px;
+}
+.sticker {
+      position: relative;
+    font-family: "Raleway Bold";
+    font-size: 14px;
+    margin-top: -30%;
+}
+.animated-button {
+    display: inline-block;
+    position: relative;
+padding: 0 10px;}
+
+.logo {
+    position: relative !important;
+    z-index: 2;
+}
+.services .content-list {
+    margin-top: 15px;
+    width: 100%;
+    float: left;
+}
+
+.ulindwe li {
+float: left;
+    width: 100%;
+    line-height: 13px;
+    margin-bottom: 2px;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 7px;
+}
+.home-blog .container {
+    width: 90%;
+}
+.home-blog .image-block {
+    display: block;
+}
+.home-contacts {
+    padding: 80px 0 40px;
+}
+.home-contacts .big-background-letter {
+    top: -15vh;
+    right: 50vh;
+    z-index: 1;
+    font-size: 90vh;
+}
+.services .big-background-letter {
+    position: fixed;
+    top: 10vh;
+    right: -4vh;
+    font-size: 70vh;
+}
+.our-best-works .container {
+    width: 90%;
+}
+.home-contacts .home-contacts-info {
+        width: 300px;
+    top: 20%;
+}
+.form label {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 13px;
+    padding: 0 10px;
+    width: 100%;
+    border-bottom: 1px solid #999;
+    text-transform: capitalize;
+}
+.screen-block.current, .screen-block.current-back {
+z-index: 1;}
+.form .form-title {
+    margin-bottom: 15px;
+    font-size:13px;
+}
+.our-best-works .new-title-text {
+    font-size: 20px;
+}
+
+
+.services.screen-block.current, .our-best-works.current, .our-clients.current, .home-blog.current {
+    z-index: 9;
+}
+.our-clients.current, .our-clients.current-back, .our-clients.previous, .our-clients.previous-back, .our-best-works.current, .our-best-works.current-back, .our-best-works.previous, .our-best-works.previous-back, .screen-block.current, .screen-block.current-back, .company-description.current, .company-description.current-back, .company-description.previous, .company-description.previous-back{    z-index: 9;}
+
+
+.our-clients.screen-block.current .sticker{    margin-top: -30%;}
+.home-blog.screen-block.current .sticker {
+    margin-top: -8%;
+}
+
+.home-contacts.screen-block.current{    padding: 45px 0 40px;}
+
+
+
+.home-contacts .form {
+padding: 50px 2% 120px !important;
+    width: 45%;
+    position: absolute;
+}
+
+
+
+.menu.opened .menu__item .border-bottom {
+    width: 100vw;
+    margin-top: 0px;
+}
+.clock.first-slide, .clock.current-back {
+    background: #000;
+    min-height:100vh;    z-index: 1;
+    height: 100vh;
+}
+.services .index span {
+    font-size: 15px;   padding: 0px;
+}
+
+
+.home-blog .new-title-text {
+    font-size: 20px;
+}
+
+.our-clients .client {
+    margin-top: 10px;
+    width: 50%;
+}
+.home-blog .container {
+padding: 7vh 0;}
+.clock .text-block-header {
+    font-size: 20px;
+}
+.five1 {
+    top: -185px;width:100% !important;    padding: 0px 8px !important;
+}
+.screen-block {
+    min-height: 100vh;
+}
+.company-description .texts {
+    margin-top: 0%;
+    margin-left: 8%;
+    width: 100%;
+    margin-right: 0%;
+}
+.company-description .images {
+    display: block;
+}
+	.company-description .image-container:first-of-type {
+    height: 100%;
+}
+.home-contacts .home-contacts-info {
+    padding-top: 100px;
+}
+
+.company-description .texts {
+margin-top: 25%;}
+
+
+.services .container {
+position: relative;
+    margin: 0 auto;
+    padding: 20px 20px;
+    width: 100%;}
+.services.screen-block.current .sticker{    margin-top: 10%;}
+.services.screen-block.current-back .sticker {
+    margin-top: 10%;
+}
+.services .content-list {
+    margin-top: 0px;
+    width: 100%;
+    float: left;
+    display: block !important;
+}
+.services.current .item:nth-child(1) .content-title-text, .services.current .item:nth-child(4) .content-title-text, .services.current-back .item:nth-child(1) .content-title-text, .services.current-back .item:nth-child(4) .content-title-text, .services.page .item:nth-child(1) .content-title-text, .services.page .item:nth-child(4) .content-title-text, .services.previous .item:nth-child(1) .content-title-text, .services.previous .item:nth-child(4) .content-title-text, .services.previous-back .item:nth-child(1) .content-title-text, .services.previous-back .item:nth-child(4) .content-title-text {
+    animation-delay: .9s;
+    font-size: 15px;
+}
+
+.services .content-title-text {
+    transition: color .3s;
+    font-size: 14px;
+}
+
+.services.screen-block.current-back .sticker {
+    margin-top: 0%;
+}
+
+.our-best-works .info {
+width:80%;}
+
+
+.our-best-works .special-button {
+    margin-top: 0px;
+    font-size: 25px;
+    height: 40px;
+    line-height: 9px;
+}
+.our-best-works .portfolio {
+margin-top: 30px;}
+.our-best-works .portfolio__item {
+    margin-bottom: 20px;
+    width: 45%;
+    height: 100px;
+}
+.screen-block.current, .screen-block.current-back .sticker {
+    margin-top: 0%;
+}
+.our-best-works .sticker {
+    margin-bottom: 10px;
+    margin-top: 0%;
+}
+.our-clients .text-container span {
+    font-size:15px;
+}
+
+.home-blog.screen-block.current .sticker {
+    margin-top:0%;
+}
+
+.home-blog .image-block {
+    display: block ;
+ 
+}
+.imgssdfsmbl
+{
+    width:100% !important;
+    position: absolute !important;
+}
+/* 
+.home-blog .text-block
+{
+    padding-top:360px;
+} */
+
+.pdddfsmbl
+{
+    padding-top:360px !important;
+}
+
+
+.home-contacts .home-contacts-title {
+    display: block;
+}
+.home-contacts .home-contacts-title p {
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+.home-contacts .home-contacts-title span {
+    margin-top: 13px;
+    font-size: 15px;
+}
+
+.home-contacts .home-contacts-info li {
+    margin-bottom: 0px;
+    width: 100%;
+    float: left;
+    margin-top: 18px;
+}
+.home-contacts .form {
+    float: right;
+    right: 1% !important;
+        padding-bottom: 104px !important;
+    display: block;
+}
+.home-contacts .home-contacts-info {
+    position: relative;
+    left: 20px;
+    bottom: 11px;
+    z-index: 999;
+    width: auto;
+}
+.screen-block.current, .screen-block.current-back .sticker { z-index:0;}
+.home-blog.screen-block.current{z-index:1;}
+.our-best-works.screen-block.current{z-index:1;}
+.our-clients.screen-block.current{z-index:1;}
+.home-contacts.screen-block.current{z-index:1;}
+.logo { position: relative !important; z-index: 1;}
+.clock .text-block {left: 10px;}
+
+.home-contacts .home-contacts-info a {
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.form label input, .form label textarea {
+    display: block;
+    position: relative;
+    z-index: 2;
+    padding: 3px 0;
+    width: 100%;
+    height: 18px;
+    background: 0 0;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 12px;
+    resize: none;
+}
+.form label .placeholder {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    margin-bottom: 8px;
+    height: 100%;
+    color: #999;
+    font-family: "Roboto Regular";
+font-size: 11px;}
+
+.form .send {
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    margin: auto;
+}
+
+.form .send span {
+    position: relative;
+    z-index: 2;
+    letter-spacing: 1px;
+    text-align: center;
+    left: 0px;
+    font-size: 12px;
+}
+
+.form .send {
+width: 125px;}
+.home-contacts .home-contacts-info .type {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 900;
+}
+.home-contacts.screen-block.current-back{    padding: 0px 0 40px;}
+
+.menu__item--open-close {
+    padding-top: 13px;
+    width: 70px;
+    height: 60px;
+}
+.menu {
+    width: 70px;
+    height: 60px;
+    background: #000;
+}
+.menu__item--open-close {
+    padding-top: 13px;
+    width: 70px;
+    height: 70px;
+}
+.menu__item .name, .menu__item .serial-number {
+    display: block;
+    font-size: 12px !important;
+}
+.logo1 {
+    position: relative !important;
+    z-index: 9;
+    left: 15px;    z-index: 1;
+    top: 15px;
+}
+.menu__background {
+    width: 70px !important;
+height: 60px !important;}
+
+.our-clients.screen-block{
+    padding-top: 18%;
+}
+.our-clients.screen-block.current-back{    padding-top: 10%;}
+.company-description .texts {
+    margin-top: 0%;
+}
+.clock.first-slide, .clock.current-back {
+z-index: 0;}
+
+.menu__item .name, .menu__item .symbol {
+    font-size: 25px;
+}
+.home-contacts .home-contacts-title {
+    width: 100% !important;
+    position: relative !important;
+    display: block !IMPORTANT;
+}
+.home-contacts .home-contacts-info {
+    position: relative;
+    left: 20px;
+    bottom: 11px;
+    z-index: 999;
+    width: auto;
+    padding-top: 0px;
+}
+
+
+
+	}
+.social .facebook:before, .social .instagram:before {
+background: #425cbb00;}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:767px) and (min-width:580px){
+	.copyright {
+    bottom: 480px;
+}
+	.wrapper{    overflow: visible;}
+	
+	.menu {
+       overflow: visible;
+    width: 100%;
+    max-width: 100%;
+   }
+	.screen-block {
+    min-height: 100vh;
+    display: block !important;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.clock.first-slide, .clock.current-back, .screen-block.current, .screen-block.current-back .sticker, .menu{width:100%;float:left;position:relative;display:block;overflow:visibility;}
+	
+	.logo1 {
+    position: absolute !important;
+    left: 15px;
+    z-index: 99999;
+    top: 15px;
+}
+	.menu.opened {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.85);
+    transition: background .6s 0s;
+    z-index: 999999;
+}
+	.logo1 img {
+    width: 105px;
+}
+
+.menu {
+height: 70px;}
+.big-background-letter {
+    display: block;
+    position: relative;
+}
+
+.clock .big-background-letter {
+    top: 0;
+    right: 0;
+    font-size: 100vh;
+}
+
+.five1 {
+top: -255px;}
+
+.five2 img {
+    width: 270px !important;
+    margin-top: -416px;
+}
+.screen-block {
+  min-height: auto;
+    display: block !important;
+    position: relative;
+    width: 100%;
+    float: left;
+    height: auto;
+    overflow: visible;
+    padding-bottom: 70px;
+}
+.big-background-letter {
+  display:none;
+}
+
+.clock .text-block {
+top: 30px;}
+.five1 {
+    top: 0;
+}
+.company-description .crossed-button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.five2 img {
+    width: 270px !important;
+    margin-top: 145px;
+}
+
+.company-description .container {
+    display: -ms-flexbox;
+display: block;}
+.screen-block {
+left: 0%;}
+.company-description .texts {
+    margin-top: 0%;
+margin-left: 0%;}
+.sticker {
+    position: relative;
+    font-family: "Raleway Bold";
+    font-size: 14px;
+    margin-top: 30px;
+}
+.company-description .container {
+    height: 100%;
+    width: 100%;
+    padding: 0px 20px;
+}
+.company-description .image-container:first-of-type {
+    max-height: initial;
+    min-height: auto;
+}
+.company-description .image-container:first-of-type {
+    height: auto;
+}
+.company-description .images {
+    width: 100%;
+}
+.company-description .image-container:first-of-type {
+left: 0;}
+
+.company-description.screen-block{}
+
+.company-description .image-container:before{display:none;}
+
+.company-description.screen-block{height:100%;overflow:hidden}
+.company-description .image-container:first-of-type {
+    height: 245px;
+}
+.services .item {
+    margin-bottom: 20px;
+}
+.sticker:before{display:none;}
+
+.sticker {
+    padding-left: initial;
+}
+
+.our-best-works .container {
+padding-top: 45px;}
+
+.our-best-works .container {
+    width: 90%;
+    height: auto;
+}
+.bottom-button {
+    padding-top: 20px;
+}
+.our-clients.screen-block {
+    padding-top: 30px;
+}
+
+.our-clients .container, .our-clients .lines {
+    width: 100%;
+    padding: 0px 15px;
+}
+.social {
+bottom: 25%;}
+
+.clock.screen-block.current.first-slide, .screen-block.current, .screen-block.current-back{padding-bottom:0px;}
+.company-description.screen-block {
+    height: auto;
+    overflow: hidden;
+    padding: 25px 0px 20px;
+}
+.bottom-button span {
+color: #000000;}
+
+.bottom-button {
+    padding-top: 0;
+    bottom: auto;
+}
+.animated-button, .special-button{
+font-size: 13px;}
+
+.home-contacts {
+    padding: 0px 0 40px;
+}
+.home-contacts .home-contacts-info {
+    position: relative;
+    left: 0;
+    bottom: 11px;
+    z-index: 999;
+    width: auto;
+    padding-top: 0px;
+    padding: 0px 20px;
+}
+
+
+.bottom-button {
+    padding-top: 20px;
+    display: none;
+}
+.home-blog.screen-block{padding-bottom:0px;}
+.our-best-works.screen-block{    height: auto;
+    padding: 0px;}
+
+
+.our-best-works .portfolio__item {
+    margin-bottom: 20px;
+    height: 165px;
+}
+.home-blog .container {
+    padding: 20px 0;
+}
+.home-blog.screen-block {
+    padding-bottom: 30px;
+    height: fit-content;
+}
+.social {
+    bottom: -380px;
+    position: relative;
+}
+.services.screen-block .social{display:none;}
+
+
+
+.home-blog .blue-line{display:none}
+.home-contacts .home-contacts-title{width:100%}
+.home-contacts .home-contacts-title p {
+    text-align: center;
+}
+.our-best-works .back {
+padding: 0px 10px;}
+
+}
+
+
+
+@media(max-width:768px) and (min-width:650px){
+	
+	
+	.our-best-works .info {
+    width: 35%;
+}
+	
+	.our-best-works .project-name {
+    padding: 10px 20px;
+    font-size: 13px;
+}
+	.our-best-works .back-layer, .our-best-works .front-layer {
+    min-height: auto;
+}
+.home-blog .text-block {
+    min-width: 100%;
+    width: 100%;
+}
+.home-blog .blue-line{display:none;}
+.home-contacts .home-contacts-title {
+    width: 100%;
+}
+	
+}
+@media(max-width:579px) and (min-width:280px){
+	.home-blog .blue-line{display:none}
+
+	.social {
+    bottom: -380px;
+    position: relative;
+}
+	.home-blog .container {
+    padding: 20px 0;
+}
+	.wrapper{    overflow: visible;}
+	
+	.menu {
+       overflow: visible;
+    width: 100%;
+    max-width: 100%;
+   }
+	.screen-block {
+    min-height: 100vh;
+    display: block !important;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.clock.first-slide, .clock.current-back, .screen-block.current, .screen-block.current-back .sticker, .menu{width:100%;float:left;position:relative;display:block;overflow:visibility;}
+	
+	.logo1 {
+    position: absolute !important;
+    left: 15px;
+    z-index: 99999;
+    top: 15px;
+}
+	.menu.opened {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.85);
+    transition: background .6s 0s;
+    z-index: 999999;
+}
+	.logo1 img {
+    width: 105px;
+}
+
+.menu {
+height: 70px;}
+.big-background-letter {
+    display: block;
+    position: relative;
+}
+
+.clock .big-background-letter {
+    top: 0;
+    right: 0;
+    font-size: 100vh;
+}
+
+.five1 {
+top: -255px;}
+
+.five2 img {
+    width: 270px !important;
+    margin-top: -416px;
+}
+.screen-block {
+  min-height: auto;
+    display: block !important;
+    position: relative;
+    width: 100%;
+    float: left;
+    height: auto;
+    overflow: visible;
+    padding-bottom: 70px;
+}
+.big-background-letter {
+  display:none;
+}
+
+.clock .text-block {
+top: 30px;}
+.five1 {
+    top: 0;
+}
+.company-description .crossed-button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.five2 img {
+    width: 270px !important;
+    margin-top: 145px;
+}
+
+.company-description .container {
+    display: -ms-flexbox;
+display: block;}
+.screen-block {
+left: 0%;}
+.company-description .texts {
+    margin-top: 0%;
+margin-left: 0%;}
+.sticker {
+    position: relative;
+    font-family: "Raleway Bold";
+    font-size: 14px;
+    margin-top: 30px;
+}
+.company-description .container {
+    height: 100%;
+    width: 100%;
+    padding: 0px 20px;
+}
+.company-description .image-container:first-of-type {
+    max-height: initial;
+    min-height: auto;
+}
+.company-description .image-container:first-of-type {
+    height: auto;
+}
+.company-description .images {
+    width: 100%;
+}
+.company-description .image-container:first-of-type {
+left: 0;}
+
+.company-description.screen-block{}
+
+.company-description .image-container:before{display:none;}
+
+.company-description.screen-block{height:100%;overflow:hidden}
+.company-description .image-container:first-of-type {
+    height: 155px;
+}
+.services .item {
+    margin-bottom: 20px;
+}
+.sticker:before{display:none;}
+
+.sticker {
+    padding-left: initial;
+}
+
+.our-best-works .container {
+padding-top: 45px;}
+
+.our-best-works .container {
+    width: 90%;
+    height: auto;
+}
+.bottom-button {
+    padding-top: 20px;
+}
+.our-clients.screen-block {
+    padding-top: 30px;
+}
+
+.our-clients .container, .our-clients .lines {
+    width: 100%;
+    padding: 0px 15px;
+}
+.social {
+bottom: 25%;}
+
+.company-description .image-container:first-of-type
+{
+    height:250px !important;
+    width:100%;
+}
+.company-description .image-container:first-of-type:after
+{
+    display:none !important;
+}
+.clock.screen-block.current.first-slide, .screen-block.current, .screen-block.current-back{padding-bottom:0px;}
+.company-description.screen-block {
+    height: 940px;
+    overflow: hidden;
+    padding: 25px 0px 20px;
+}
+.bottom-button span {
+color: #000000;}
+
+.bottom-button {
+    padding-top: 0;
+    bottom: auto;
+}
+.animated-button, .special-button{
+font-size: 13px;}
+
+.home-contacts {
+    padding: 0px 0 40px;
+}
+.home-contacts .home-contacts-info {
+    position: relative;
+    left: 0;
+    bottom: 11px;
+    z-index: 999;
+    width: auto;
+    padding-top: 0px;
+    padding: 0px 20px;
+}
+
+
+.bottom-button {
+    padding-top: 20px;
+    display: none;
+}
+.home-blog.screen-block{padding-bottom:0px;}
+.our-best-works.screen-block{    height: auto;
+    padding: 0px;}
+
+
+.our-best-works .portfolio__item {
+    margin-bottom: 20px;
+    height: 165px;
+}
+.clock.screen-block.current.first-slide{overflow:hidden;}
+.social {
+    bottom: -75%;
+}
+
+.services.screen-block{padding-bottom: 0px;
+    padding-left: 25px;
+padding-right: 25px;}
+
+
+.company-description .image-container:first-of-type {
+    height: auto;
+}
+.company-description .images {
+    padding-bottom: 300px;
+}
+.our-clients.screen-block {
+    height: auto;
+}
+.our-best-works.screen-block {
+    height: 100%;
+    padding: 0px;
+}
+
+
+.our-best-works .portfolio__item--audi {top: -10px;}
+.our-best-works .portfolio__item {top: -10px;}
+
+.home-blog.screen-block {
+    padding-bottom: 35px;
+    height: fit-content;
+}
+
+.services .content-title-text {
+    font-size: 13px;
+}
+
+.home-contacts .home-contacts-title p {
+    text-align: center;
+}
+.home-contacts .home-contacts-title span {
+    margin-top: 13px;
+    font-size: 15px;
+    text-align: center;
+}
+.home-contacts .home-contacts-title {
+padding: 4% 3% 4% 3%;}
+.our-best-works .back {
+padding: 0px 14px;}
+.our-best-works .project-description {
+font-size: 12px;}
+}
+
+
+
+
+
+
+
+
+
+
+
