@@ -205,15 +205,19 @@ border-bottom:1px solid #fff;
 /* start top button section */
 .info135
 {
-    width:55%;
+    width:50%;
+    float: right;
 }
-.info135 img
+.info135
 {
+    float: right;
     width:100%;
 }
 .info12
 {
     width:40%;
+    float: right;
+
 }
 /* end button top section */
 
