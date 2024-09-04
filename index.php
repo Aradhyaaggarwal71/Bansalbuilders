@@ -49,8 +49,8 @@
     <meta name="dc.subject" content="Bansal Builders" />
     <meta name="dc.description" content="" />
    <link rel="icon" type="image/png" href="img/bansal-bulders-logo.jpg">
-
-	  <link href="../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
    <link rel="stylesheet" href="css/style1.css">   
    <link rel="stylesheet" href="css/style2.css">
    <link rel="stylesheet" href="css/slick-theme.css">
@@ -64,7 +64,7 @@
    <nav id="hide-menu" class="hidden-menu"></nav>
    <div class="wrapper">
       <a class="logo1" id="logo">
-        <img src="img/bansal-bulders-logo.jpg" style="height: 75px; width: 75px; margin-top: 5px;">
+        <img src="img/bansal-bulders-logo.jpg" style="height: 75px; width: 75px; ">
        
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -146,15 +146,15 @@
 	  <div class="clock screen-block" >
 
       <div class="social soclajjdf">
-         <a class="instagram" href="https://www.instagram.com/bansal_builder08/" rel="noopener nofollow" target="_blank">
-         <i class="fa fa-facebook" aria-hidden="true"></i>
+         <a class="fa-regular fa-instagram" href="https://www.instagram.com/bansal_builder08/" rel="noopener nofollow" target="_blank">
          </a>
+         <i class="fa-brands fa-whatsapp"></i>
          
          <a href="https://wa.me/+919891884099" class="fab fa-whatsapp"></a>      
          
          <a href="mailto:seemagarg5388@example.com" class="fa-regular fa-envelope"></a>      
          
-            
+
          </div>
 
  <!-- <div class="big-background-letter"><span>F</span></div> -->
@@ -238,7 +238,7 @@
 
 </a>
 <a class="instagram" href="mailto:seemagarg5388@example.com" rel="noopener nofollow" target="_blank">
-   <i class="fa fa-envelope" aria-hidden="true"></i>
+   <i class="fa-regular fa-envelope" aria-hidden="true"></i>
    </a>
         
 
@@ -255,7 +255,9 @@
          </div>
          <div class="container">
             <div class="sticker white" href="">
-               <span class="sticker-text">SERVICES</span>
+               <strong>
+               <span class="sticker-text" style="font-weight: 800; font-size: x-large;">SERVICES</span>
+               </strong>
             </div>
             <div class="services-list">
                <div class="item">
@@ -295,7 +297,7 @@
                <div class="item">
                   <span class="index"><span>03</span></span>
                   <div class="content">
-                     <a class="content-title" href="website-designing-services-in-delhi.html">
+                     <a class="content-title" href="">
                      <span class="content-title-text">INTERIOR DESIGNING</span><br>
                      <span class="content-title-text subtitle"></span>
                      </a>
@@ -350,7 +352,7 @@
       <div class="image-block vidddesd ">
          <div class="image-container ">
             <picture>
-               <img src="/bb-2-main/img/5.jpg" alt="" style="width: 650px; height: 384px;">
+               <img src="img/5.jpg" alt="" style="width: 650px; height: 384px;">
             </picture>
          </div>
       
@@ -391,13 +393,13 @@
                         <span class="project-name">Real Estate</span>
                         <div class="image-container">
                            <picture>
-                              <img src="/bb-2-main/img/6.jpg" title="best website design company in delhi" alt="Best Website Design Company in Delhi, Website Designing Agency in Delhi"  class="lazy">
+                              <img src="img/6.jpg" title="best website design company in delhi" alt="Best Website Design Company in Delhi, Website Designing Agency in Delhi"  class="lazy">
                            </picture>
                         </div>
                      </div>
                      <div class="back">
                    
-                        <p class="project-description">Gandhi Cycle is one of most trusted cycling store in West Delhi, provide mountain bikes (MTBs), ATBs, Road Bikes, Hybrid, Children’s bikes or ladies bikes.</p>
+                        <p class="project-description"></p>
                     <p class="go-to-project"></p>
                      </div>
                   </a>
@@ -407,7 +409,7 @@
                         <div class="image-container">
                            <picture>
                         
-                              <img src="/bb-2-main/img/9.jpg" title="best website design company in delhi" alt="Website Designing Agency in Delhi"  class="lazy">
+                              <img src="img/slide-2.jpg" alt=""  class="lazy">
                            </picture>
                         </div>
                      </div>
@@ -423,7 +425,7 @@
                         <div class="image-container">
                            <picture>
                             
-                              <img src="/bb-2-main/img/slide-2.jpg" alt="Website Designing Company In Delhi, website designing agency in delhi" title="best website design company in delhi" class="lazy">
+                              <img src="img/4.jpg" alt="Website Designing Company In Delhi, website designing agency in delhi" title="best website design company in delhi" class="lazy">
                            </picture>
                         </div>
                      </div>
@@ -438,7 +440,7 @@
                         <span class="project-name">Build</span>
                        <div class="image-container">
                            <picture>
-                              <img src="img/4.jpg" title="Website Designing Company In Delhi" alt="Best Website Design Company in Delhi" class="lazy">
+                              <img src="img/9.jpg" title="Website Designing Company In Delhi" alt="Best Website Design Company in Delhi" class="lazy">
                            </picture>
                         </div>
                      </div>
@@ -805,31 +807,30 @@
             LET'S DISCUSS ABOUT YOUR PROJECT	
             </p>
          </div>
-         <form class="form" method="post" action="connect.php">
-            <button type="reset" class="close-form" aria-label="close"></button>
-            <span class="form-title">START A CONVERSATION</span>
-            <label>
-            <input type="text" name="name">
-            <span class="placeholder">Name</span>
-            </label>
-            <label class="number">
-            <input type="text" name="phone">
-            <span class="placeholder" >Phone</span>
-            </label>
-            <label>
-            <input type="email" name="email">
-            <span class="placeholder">Email Id</span>
-            </label>
-            <label>
-            <textarea name="message"></textarea>
-            <span class="placeholder">Message</span>
-            </label>
-            <button type="submit" name="conversation" class="send">
-            <span>Submit</span>
-            </button>
-         </form>
-		          
-            
+         <form name="submit-to-google-sheet" class="form" method="post" action="https://script.google.com/macros/s/AKfycbzO_IXuWpC04SuniSxPtZvIY_r_68O4hJU-G5UWo6RsQalpteZgfTBnZ2D7o5VzhhW8uA/exec">
+   <button type="reset" class="close-form" aria-label="close"></button>
+   <span class="form-title">START A CONVERSATION</span>
+   <label>
+      <input type="text" name="name" required>
+      <span class="placeholder">Name</span>
+   </label>
+   <label class="number">
+      <input type="text" name="phone" required>
+      <span class="placeholder">Phone</span>
+   </label>
+   <label>
+      <input type="email" name="email" required>
+      <span class="placeholder">Email Id</span>
+   </label>
+   <label>
+      <textarea name="message" required></textarea>
+      <span class="placeholder">Message</span>
+   </label>
+   <button type="submit" name="conversation" class="send">
+      <span>Submit</span>
+   </button>
+</form>
+
           
        
          <ul class="home-contacts-info">
@@ -851,6 +852,7 @@
             <li style="width:100%;">
                <span class="type">Reach Us </span>
                <a href="#" target="_blank rel=noopener">D-14 83/84 SHIVA ROAD SEC-8 ROHINI, DELHI-110085</a>
+
             </li>
          </ul>
        
@@ -896,75 +898,6 @@
   gtag('config', 'UA-172834757-1');
 </script>
 <!-- <script id="godaddy-security-s" src="https://cdn.sucuri.net/badge/badge.js" data-s="206" data-i="da43c457361e4a91803b10188f03372819ad0ed54c" data-p="r" data-c="d" data-t="g"></script> -->
-<script type="application/ld+json">{
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name" : "Five Design - Best Website Design & Development Company In Delhi",
-      "url": "http://fivedesign.in/",
-      "logo": "http://fivedesign.in/img/logo-light.png",
-      "image": "http://fivedesign.in/img/logo-light.png",
-      "description": "Looking for the best website design & development company in Delhi? We provide you the best website design solutions. Get in touch with us @+91-989-906-9418",
-      "telephone": "+91-9354816821",
-      "pricerange":"+91-989-906-9418 - Discuss Now | Mail US: info@fivedesign.in
-",
-     
-      "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.7",
-      "bestRating": "5",
-      "ratingCount": "3"
-      },
-      "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "New Delhi",
-      "addressRegion": "DEL",
-      "streetAddress": "226, Second Floor, D-14, Sector 8, Rohini,
-Delhi-110085,",
-      "postalCode": "110085"
-      },
-      "openingHours": [
-      "Mon-Sat 09:30Am - 06.00Pm"
-      ]
-      }
-    </script>
-  <script type="application/ld+json">
- { "@context": "https://schema.org",
- "@type": "Organization",
- "name": "Five Design",
- "legalName" : "Five Design",
- "url": "http://fivedesign.in/",
- "logo": "http://fivedesign.in/img/logo-light.png",
- "foundingDate": "2012",
- "founders": [
- {
- "@type": "Person",
- "name": "Kapil Sharma"
- },
- {
- "@type": "Person",
- "name": "Kapil Sharma"
- } ],
- "address": {
- "@type": "PostalAddress",
- "streetAddress": "226, Second Floor, D-14, Sector 8, Rohini",
- "addressLocality": "Rohini, Delhi",
- "addressRegion": "IN",
- "postalCode": "110085",
- "addressCountry": "INDIA"
- },
- "contactPoint": {
- "@type": "ContactPoint",
- "contactType": "customer support",
- "telephone": "[+91-9354816821]",
- "email": "info@fivedesign.in"
- },
- "sameAs": [ 
- "https://www.facebook.com/Fivedesign-108796373956937/",
- "https://twitter.com/defivedesign",
- "https://www.instagram.com/fivedesign.in/",
- "https://in.linkedin.com/in/five-design-india"
-  ]}
-</script>
 
 
 
@@ -1005,19 +938,47 @@ Delhi-110085,",
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
+
   ]
 });
 </script>
 <!--- end testimonial section-->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzO_IXuWpC04SuniSxPtZvIY_r_68O4hJU-G5UWo6RsQalpteZgfTBnZ2D7o5VzhhW8uA/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  
+  form.addEventListener('submit', e => {
+    e.preventDefault(); // Prevent the default form submission behavior
+    
+    const submitButton = form.querySelector('button[type="submit"]');
+    submitButton.disabled = true; // Disable the submit button to prevent multiple submissions
+    submitButton.textContent = 'Submitting...'; // Optional: change the button text to indicate submission
+    
+    fetch(scriptURL, {
+      method: 'POST',
+      body: new FormData(form)
+    })
+    .then(response => {
+      if (response.ok) {
+        console.log('Success!', response);
+        form.reset();
+        alert('Form submitted successfully!');
+      } else {
+        console.error('Response not OK:', response.statusText);
+        alert('Failed to submit the form. Please try again.');
+      }
+    })
+    .catch(error => {
+      console.error('Error!', error.message);
+      alert('An error occurred. Please try again.');
+    })
+    .finally(() => {
+      submitButton.disabled = false; // Re-enable the submit button
+      submitButton.textContent = 'Submit'; // Reset the button text
+    });
+  });
+</script>
 
 
 
-
-
-</body>
-
-<!-- Mirrored from fivedesign.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Oct 2023 18:33:19 GMT -->
-</html>
+</body></html>

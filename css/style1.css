@@ -6061,7 +6061,7 @@ width:100%;
         min-height: 650px;
     }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .screen-block {
         min-height: 768px;
     }
